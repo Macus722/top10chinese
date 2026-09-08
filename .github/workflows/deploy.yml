@@ -13,73 +13,96 @@ jobs:
     steps:
       - name: 🚚 Checkout latest code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
 
-      - name: 🔍 Detect remote web root
-        id: detect
+      - name: 🚀 Deploy to Live Web Root
         run: |
           npm install basic-ftp
           node -e "
             const ftp = require('basic-ftp');
+            const fs = require('fs');
+            const path = require('path');
+
             (async () => {
               const client = new ftp.Client();
               client.ftp.verbose = true;
-              let connected = false;
-              
-              // Try explicit TLS first
+
+              const host = process.env.FTP_SERVER.trim();
+              const user = process.env.FTP_USERNAME.trim();
+              const password = process.env.FTP_PASSWORD.trim();
+
+              console.log('Connecting to ' + host + ' as ' + user + '...');
               try {
-                await client.access({
-                  host: process.env.FTP_SERVER,
-                  user: process.env.FTP_USERNAME,
-                  password: process.env.FTP_PASSWORD,
-                  secure: 'explict'
-                });
-                connected = true;
+                await client.access({ host, user, password, secure: false });
               } catch (e) {
-                console.log('Explicit TLS connection failed, trying standard FTP...');
+                console.log('Standard FTP failed, trying explicit TLS...');
+                await client.access({ host, user, password, secure: 'explict' });
               }
+
+              const initialDir = await client.pwd();
+              console.log('Initial PWD:', initialDir);
+              const initialList = await client.list();
+              console.log('Initial listing:');
+              initialList.forEach(i => console.log('  ' + i.name + ' (' + (i.isDirectory ? 'dir' : 'file') + ')'));
+
+              // We want to upload to where https://top10chinese.com/ serves from!
+              // Let's test if we can cd up or if initialDir has admin
+              let targetDir = '.';
               
-              if (!connected) {
-                await client.access({
-                  host: process.env.FTP_SERVER,
-                  user: process.env.FTP_USERNAME,
-                  password: process.env.FTP_PASSWORD,
-                  secure: false
-                });
+              // If we are inside an 'admin' folder or cPanel created subfolder, test if '..' works:
+              try {
+                await client.cd('..');
+                const parentDir = await client.pwd();
+                console.log('Successfully navigated up to:', parentDir);
+                const parentList = await client.list();
+                console.log('Parent listing:');
+                parentList.forEach(i => console.log('  ' + i.name));
+                
+                // If parent has 'admin' in it, parent IS the document root of top10chinese.com!
+                if (parentList.some(i => i.name === 'admin')) {
+                  console.log('Parent contains admin folder -> Parent is the live web root!');
+                  targetDir = parentDir;
+                }
+              } catch (e) {
+                console.log('Cannot navigate to parent, staying in initial directory:', e.message);
+                await client.cd(initialDir);
               }
-              
-              const list = await client.list();
-              console.log('Remote listing:');
-              list.forEach(i => console.log('  ' + i.name));
-              
-              const hasPublicHtml = list.some(i => i.name === 'public_html');
-              const target = hasPublicHtml ? 'public_html/' : './';
-              console.log('Target directory chosen: ' + target);
-              require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'target_dir=' + target + '\n');
+
+              console.log('Target deployment directory is:', targetDir);
+              await client.cd(targetDir);
+
+              // Upload all site files recursively!
+              const localRoot = process.cwd();
+              const excludeDirs = ['.git', '.github', '.agents', '.agent-rules', 'node_modules'];
+              const excludeFiles = ['package.json', 'package-lock.json', '.gitignore', 'scripts_scan_sizes.cjs'];
+
+              async function uploadDirectory(localPath, remotePath) {
+                const items = fs.readdirSync(localPath);
+                for (const item of items) {
+                  if (excludeDirs.includes(item) || excludeFiles.includes(item)) continue;
+                  const itemLocalPath = path.join(localPath, item);
+                  const stat = fs.statSync(itemLocalPath);
+
+                  if (stat.isDirectory()) {
+                    await client.ensureDir(item);
+                    await uploadDirectory(itemLocalPath, item);
+                    await client.cd('..');
+                  } else {
+                    console.log('Uploading: ' + path.relative(localRoot, itemLocalPath));
+                    await client.uploadFrom(itemLocalPath, item);
+                  }
+                }
+              }
+
+              console.log('Starting full site upload to live root...');
+              await uploadDirectory(localRoot, targetDir);
+              console.log('🎉 Full upload complete!');
               client.close();
             })().catch(err => {
-              console.error('Detection fallback due to error:', err.message);
-              require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'target_dir=public_html/\n');
+              console.error('Fatal deployment error:', err);
+              process.exit(1);
             });
           "
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-
-      - name: 📂 Sync files to Namecheap
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ steps.detect.outputs.target_dir }}
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.agents/**
-            **/.agent-rules/**
-            **/node_modules/**
-            package*.json
-            scripts_scan_sizes.cjs
