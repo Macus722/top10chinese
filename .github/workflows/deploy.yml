@@ -1,0 +1,85 @@
+name: Deploy Website to Namecheap via FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy to Namecheap
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Checkout latest code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 🔍 Detect remote web root
+        id: detect
+        run: |
+          npm install basic-ftp
+          node -e "
+            const ftp = require('basic-ftp');
+            (async () => {
+              const client = new ftp.Client();
+              client.ftp.verbose = true;
+              let connected = false;
+              
+              // Try explicit TLS first
+              try {
+                await client.access({
+                  host: process.env.FTP_SERVER,
+                  user: process.env.FTP_USERNAME,
+                  password: process.env.FTP_PASSWORD,
+                  secure: 'explict'
+                });
+                connected = true;
+              } catch (e) {
+                console.log('Explicit TLS connection failed, trying standard FTP...');
+              }
+              
+              if (!connected) {
+                await client.access({
+                  host: process.env.FTP_SERVER,
+                  user: process.env.FTP_USERNAME,
+                  password: process.env.FTP_PASSWORD,
+                  secure: false
+                });
+              }
+              
+              const list = await client.list();
+              console.log('Remote listing:');
+              list.forEach(i => console.log('  ' + i.name));
+              
+              const hasPublicHtml = list.some(i => i.name === 'public_html');
+              const target = hasPublicHtml ? 'public_html/' : './';
+              console.log('Target directory chosen: ' + target);
+              require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'target_dir=' + target + '\n');
+              client.close();
+            })().catch(err => {
+              console.error('Detection fallback due to error:', err.message);
+              require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'target_dir=public_html/\n');
+            });
+          "
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
+      - name: 📂 Sync files to Namecheap
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ steps.detect.outputs.target_dir }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.agents/**
+            **/.agent-rules/**
+            **/node_modules/**
+            package*.json
+            scripts_scan_sizes.cjs
