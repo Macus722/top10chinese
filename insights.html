@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="zh-CN">
+<html class="light" lang="zh-CN">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -18,6 +18,66 @@
           "position": 1,
           "name": "重新定义全球 SEO：从流量的‘竞逐者’，进化为屏幕的‘统治者’",
           "url": "https://top10chinese.com/insight-brandthirty.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "港交所科技上市潮全面复苏：8个月募资破3400亿与18C特专科技红利",
+          "url": "https://top10chinese.com/insights/hkex-tech-ipo-revival-chapter-18c.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "无锡CSEAC 2026半导体装备展：核心工具突破与千亿芯片出口倍增密码",
+          "url": "https://top10chinese.com/insights/cseac-2026-china-semiconductor-equipment.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "中国创新药出海黄金时代：双抗ADC重磅授权与跨国药企研发逻辑重置",
+          "url": "https://top10chinese.com/insights/chinese-biotech-adc-global-licensing.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "马来西亚算力中心狂飙：9.3%电力负荷红线与东盟绿色电网重构",
+          "url": "https://top10chinese.com/insights/malaysia-data-center-boom-energy-grid.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "开源前沿大模型的亚洲范式：Qwen3.8、DeepSeek-V4与全球算力效能突围",
+          "url": "https://top10chinese.com/insights/open-weight-ai-frontier-china.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "中国—东盟中间品贸易激增：CAFTA 3.0签署后的区域产业链深度嵌套",
+          "url": "https://top10chinese.com/insights/china-asean-intermediate-goods-trade.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "新民用航空法实施：低空经济法定化与万亿级自主空域产业重塑",
+          "url": "https://top10chinese.com/insights/china-civil-aviation-law-low-altitude-economy.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "海湾主权资本东进新格局：PIF上海布局与中东资金的“硬科技+双向赋能”",
+          "url": "https://top10chinese.com/insights/middle-east-sovereign-wealth-china-pivot.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "东京证券交易所治理重构：FIEA衍生品披露新规与东亚资本效率觉醒",
+          "url": "https://top10chinese.com/insights/japan-governance-reforms-capital-efficiency.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "香港数码港元与合规稳定币元年：首批牌照落地与离岸流动性新秩序",
+          "url": "https://top10chinese.com/insights/hk-stablecoin-licensing-first-cohort.html"
         },
         {
           "@type": "ListItem",
@@ -55,14 +115,15 @@
             theme: {
                 extend: {
                     colors: {
-                        background: "#121212",
-                        "on-background": "#faf9f6",
-                        surface: "#1b1c1a",
-                        "on-surface": "#faf9f6",
-                        "surface-container": "#222321",
+                        background: "#faf9f6",
+                        "on-background": "#1b1c1a",
+                        surface: "#faf9f6",
+                        "on-surface": "#1b1c1a",
+                        "surface-container": "#efeeeb",
+                        "surface-container-low": "#f4f3f0",
                         primary: "#bb0002",
                         "on-primary": "#ffffff",
-                        secondary: "#a0a0a0",
+                        secondary: "#5e5e5e",
                         gold: "#c5a059",
                     },
                     fontFamily: {
@@ -78,7 +139,6 @@
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
         .serif-display { font-family: 'Noto Serif', serif; }
         .sans-label { font-family: 'Inter', sans-serif; }
-        body { background-color: #121212; color: #faf9f6; }
         .article-card {
             transition: opacity 0.4s ease-out, transform 0.4s ease-out;
         }
@@ -124,7 +184,7 @@
     }
     </script>
 </head>
-<body class="selection:bg-primary selection:text-white overflow-x-hidden">
+<body class="bg-background text-on-surface selection:bg-primary selection:text-white overflow-x-hidden">
 
 <!-- Reading Progress Bar -->
 <div class="fixed top-0 left-0 h-[2px] bg-[#bb0002] z-[60] w-0 transition-all duration-75" id="progress-bar"></div>
@@ -140,14 +200,15 @@ window.addEventListener('scroll', () => {
 <!-- Navigation Shell -->
 <nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
     <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
-        <a href="index.html" class="flex items-center gap-2 z-50 relative">
-            <img src="assets/images/全球十大华人 Logo（背景 - 透明）.png" alt="全球十大华人 Logo" class="w-auto md:drop-shadow-xl h-12 md:h-16 scale-[2.5] md:scale-[2.8] origin-left -translate-x-4 md:-translate-x-16" />
+        <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
+            <img src="assets/images/全球十大华人 Logo（背景 - 透明）.png" alt="全球十大华人 Logo" class="w-auto md:drop-shadow-xl h-12 md:h-16 scale-[2.5] md:scale-[2.8] origin-left" />
         </a>
         
-        <div class="hidden md:flex gap-8 items-center">
+        <div class="hidden md:flex gap-4 lg:gap-8 items-center">
             <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="insights.html">深度洞察</a>
             <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="interviews.html">独家专访</a>
             <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="honorees.html">历届荣誉</a>
+            <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="enterprise-certification.html">企业认证</a>
             <div class="relative group h-full flex items-center">
                 <button class="nav-dropdown-btn serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300 flex items-center gap-1 focus:outline-none">
                     评选盛典 <span class="material-symbols-outlined text-[1rem]">arrow_drop_down</span>
@@ -180,6 +241,7 @@ window.addEventListener('scroll', () => {
     <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="insights.html">深度洞察</a>
     <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="interviews.html">独家专访</a>
     <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="honorees.html">历届荣誉</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="enterprise-certification.html">企业认证</a>
     
     <div class="w-16 h-px bg-white/20 my-2"></div>
     
@@ -237,16 +299,16 @@ window.addEventListener('scroll', () => {
 
 <main class="min-h-screen">
     <!-- Featured Hero Section -->
-    <section class="pt-32 pb-16 px-4 md:px-12 max-w-[1920px] mx-auto min-h-[70vh] flex flex-col justify-center border-b border-white/5">
+    <section class="pt-32 pb-16 px-4 md:px-12 max-w-[1920px] mx-auto min-h-[70vh] flex flex-col justify-center border-b border-black/10 bg-[#faf9f6]">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 lg:gap-24 items-center">
             <div>
                 <span class="sans-label text-primary tracking-[0.2em] font-bold text-xs md:text-sm uppercase mb-6 block border-l-2 border-primary pl-4">聚焦研究 (Featured Insight)</span>
-                <h1 class="serif-display text-5xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8">重新定义全球 SEO：<br/><span class="italic text-secondary font-light">从流量的‘竞逐者’，进化为屏幕的‘统治者’</span></h1>
-                <p class="text-[#e8e6e1] text-lg md:text-xl leading-relaxed mb-10 max-w-xl font-light">Prism Media 如何利用‘Google 屏幕占领’策略，为华人企业在全球竞争中构建不可逾越的信任壁垒。</p>
-                <a href="insight-brandthirty.html" class="inline-block bg-[#1b1c1a] border border-white/10 hover:border-[#bb0002] hover:bg-[#bb0002] text-white px-4 md:px-8 py-5 sans-label text-xs tracking-widest uppercase transition-all duration-500 font-bold">阅读深度报告 (Read Report)</a>
+                <h1 class="serif-display text-5xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8 text-[#1b1c1a]">重新定义全球 SEO：<br/><span class="italic text-secondary font-light">从流量的‘竞逐者’，进化为屏幕的‘统治者’</span></h1>
+                <p class="text-secondary text-lg md:text-xl leading-relaxed mb-10 max-w-xl font-light">Prism Media 如何利用‘Google 屏幕占领’策略，为华人企业在全球竞争中构建不可逾越的信任壁垒。</p>
+                <a href="insight-brandthirty.html" class="inline-block bg-[#1b1c1a] border border-black/10 hover:border-[#bb0002] hover:bg-[#bb0002] text-white px-4 md:px-8 py-5 sans-label text-xs tracking-widest uppercase transition-all duration-500 font-bold shadow-sm">阅读深度报告 (Read Report)</a>
             </div>
-            <div class="aspect-[4/3] bg-neutral-900 border border-white/5 overflow-hidden group">
-                <img src="assets/images/prism_media.jpg" alt="Prism Media Global Headquarters" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 origin-bottom" loading="lazy"/>
+            <div class="aspect-[4/3] bg-neutral-100 border border-black/10 overflow-hidden group">
+                <img src="assets/images/prism_media.jpg" alt="Prism Media Global Headquarters" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 origin-bottom" loading="lazy"/>
             </div>
         </div>
     </section>
@@ -257,22 +319,22 @@ window.addEventListener('scroll', () => {
             <!-- Main Taxonomy -->
             <div class="flex items-center gap-10 overflow-x-auto py-5 border-b border-white/5 select-none" id="main-filters">
                 <button class="sans-label text-[14px] text-gold font-bold uppercase whitespace-nowrap border-b border-gold pb-1 transition-all" data-filter="all">全部 (All)</button>
-                <button class="sans-label text-[14px] text-secondary hover:text-gold pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="industry">行业深度 (Industry)</button>
-                <button class="sans-label text-[14px] text-secondary hover:text-gold pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="region">地区局势 (Region)</button>
-                <button class="sans-label text-[14px] text-secondary hover:text-gold pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="capital">资本流向 (Capital Flow)</button>
-                <button class="sans-label text-[14px] text-secondary hover:text-gold pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="technology">技术赋能 (Technology)</button>
+                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="industry">行业深度 (Industry)</button>
+                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="region">地区局势 (Region)</button>
+                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="capital">资本流向 (Capital Flow)</button>
+                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="technology">技术赋能 (Technology)</button>
             </div>
             <!-- Region Sub-filters -->
             <div class="items-center gap-6 md:gap-8 overflow-x-auto py-4 select-none transition-all duration-300" id="region-sub-filters-container" style="display: none; opacity: 0; transform: translateY(-10px);">
                 <span class="sans-label text-xs text-white/80 uppercase tracking-[0.2em] whitespace-nowrap">地区细分 (Regions):</span>
                 <button class="sans-label text-xs text-gold font-bold uppercase transition-colors whitespace-nowrap" data-region-filter="all">全部地区 (All)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="asean">东盟 (ASEAN)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="china">中国 (China)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="hongkong">香港 (Hong Kong)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="macau">澳门 (Macau)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="japan">日本 (Japan)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="korea">韩国 (Korea)</button>
-                <button class="sans-label text-xs text-secondary hover:text-white uppercase transition-colors whitespace-nowrap" data-region-filter="us">美国 (US)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="asean">东盟 (ASEAN)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="china">中国 (China)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="hongkong">香港 (Hong Kong)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="macau">澳门 (Macau)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="japan">日本 (Japan)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="korea">韩国 (Korea)</button>
+                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="us">美国 (US)</button>
             </div>
         </div>
     </div>
@@ -289,569 +351,732 @@ window.addEventListener('scroll', () => {
     </div>
 
     <!-- Intelligence Grid -->
-    <section class="max-w-[1920px] mx-auto px-6 md:px-24 py-16 bg-[#121212]">
-        <div class="mb-10 flex justify-between items-center border-b border-white/5 pb-4">
-            <p id="counter-label" class="sans-label text-sm text-white/80 uppercase tracking-widest font-bold">已为您显示 28 篇深度洞察（共 28 篇）</p>
+    <section class="max-w-[1920px] mx-auto px-6 md:px-24 py-16 bg-white">
+        <div class="mb-10 flex justify-between items-center border-b border-black/10 pb-4">
+            <p id="counter-label" class="sans-label text-sm text-secondary uppercase tracking-widest font-bold">已为您显示 38 篇深度洞察（共 38 篇）</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 lg:gap-16 transition-all duration-500" id="insights-grid">
             
             <!-- Card 1: Prism Media -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology capital" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/prism_media.jpg" alt="Google Screen Domination" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/prism_media.jpg" alt="Google Screen Domination" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology / Capital Flow</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insight-brandthirty.html" class="before:absolute before:inset-0">重新定义全球 SEO：从流量的‘竞逐者’，进化为屏幕的‘统治者’</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深入剖析 Prism Media 如何利用搜索网络防御体系，为华人企业在全球市场构建极其高昂的资本与信任双重壁垒。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jan 11, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">10 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深入剖析 Prism Media 如何利用搜索网络防御体系，为华人企业在全球市场构建极其高昂的资本与信任双重壁垒。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jan 11, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">10 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            
+            <!-- Card 2: HKEX IPO Revival -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="hongkong">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/hkex-tech-ipo-revival-chapter-18c.webp" alt="HKEX Tech IPO Revival" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/hkex-tech-ipo-revival-chapter-18c.html" class="before:absolute before:inset-0">港交所科技上市潮全面复苏：8个月募资破3400亿与18C特专科技红利</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析前8个月港股IPO激增153%背后的硬科技支撑，特专科技制度放宽延期与中东中资双向资金汇流新生态。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Sep 07, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3: Semiconductor Equipment CSEAC 2026 -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry technology" data-region="china">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/cseac-2026-china-semiconductor-equipment.webp" alt="Semiconductor Fab Cleanroom" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Technology</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/cseac-2026-china-semiconductor-equipment.html" class="before:absolute before:inset-0">无锡CSEAC 2026半导体装备展：核心工具突破与千亿芯片出口倍增密码</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">直击第14届无锡半导体装备展核心突破，中微70:1超高深宽比刻蚀与前8个月全国芯片出口暴涨103%的产业真相。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Sep 04, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">16 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4: Chinese Biotech ADC -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry capital" data-region="china">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-biotech-adc-global-licensing.webp" alt="Biopharma Cleanroom Laboratory" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Capital Flow</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/chinese-biotech-adc-global-licensing.html" class="before:absolute before:inset-0">中国创新药出海黄金时代：双抗ADC重磅授权与跨国药企研发逻辑重置</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度拆解康宁杰瑞与宜联生物8月数十亿美元全球授权协议，穿透首付现金与里程碑结构，洞察跨国药企专利悬崖下的中国红利。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Aug 31, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">15 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5: Malaysia Data Center Grid -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="asean">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/malaysia-data-center-boom-energy-grid.webp" alt="Johor Data Center and Electrical Grid" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/malaysia-data-center-boom-energy-grid.html" class="before:absolute before:inset-0">马来西亚算力中心狂飙：9.3%电力负荷红线与东盟绿色电网重构</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">官方确认数据中心8月耗电达西马9.3%历史峰值，解析柔佛4.5GW算力承载极限、TNB 430亿电网升级与CRESS绿电直供机制。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Aug 20, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">15 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6: Open-Weight AI -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology industry" data-region="china">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/open-weight-ai-frontier-china.webp" alt="AI Supercomputing Cluster" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology / Industry</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/open-weight-ai-frontier-china.html" class="before:absolute before:inset-0">开源前沿大模型的亚洲范式：Qwen3.8、DeepSeek-V4与全球算力效能突围</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">阿里通义2.4T开源旗舰、DeepSeek企业推理成本暴降85%与Kimi K3长文本革新，揭秘打破西方专有API垄断的算法工程突围。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Aug 08, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">16 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 7: China-ASEAN Trade -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="asean">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/china-asean-intermediate-goods-trade.webp" alt="ASEAN Container Terminal" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/china-asean-intermediate-goods-trade.html" class="before:absolute before:inset-0">中国—东盟中间品贸易激增：CAFTA 3.0签署后的区域产业链深度嵌套</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">前7个月双边贸易冲破7440亿美元，中间品贸易占据三分之二，剖析CAFTA 3.0制度红利与泛亚铁路互联互通下的反脱钩超级网络。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jul 18, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8: Low-Altitude Economy -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry technology" data-region="china">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/china-civil-aviation-law-low-altitude-economy.webp" alt="eVTOL Rooftop Vertiport" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Technology</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/china-civil-aviation-law-low-altitude-economy.html" class="before:absolute before:inset-0">新民用航空法实施：低空经济法定化与万亿级自主空域产业重塑</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">民航法大修自7月1日施行，300米以下空域备案制破冰与民航局低空安全司设立，开启eVTOL与通航新基建的万亿级商业化黄金期。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jul 07, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">15 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 9: Middle East Sovereign Wealth -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="china">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/middle-east-sovereign-wealth-china-pivot.webp" alt="Gulf Sovereign Capital Colonnade" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/middle-east-sovereign-wealth-china-pivot.html" class="before:absolute before:inset-0">海湾主权资本东进新格局：PIF上海布局与中东资金的“硬科技+双向赋能”</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">沙特PIF正式启航上海办公室，穿透万亿美元海湾基金的实业出海诉求，剖析新能源、先进制造领域的“资本换产能”双向合作范式。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">May 26, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 10: Japan Governance -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry capital" data-region="japan">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/japan-governance-reforms-capital-efficiency.webp" alt="Tokyo Corporate Boardroom" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Capital Flow</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/japan-governance-reforms-capital-efficiency.html" class="before:absolute before:inset-0">东京证券交易所治理重构：FIEA衍生品披露新规与东亚资本效率觉醒</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">日本5月实施FIEA衍生品持股穿透新规，结合东证7月治理准则精简重构，深度解读破净重估与解除交叉持股对东亚华人企业的启示。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">May 12, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">15 MIN READ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 11: HK Stablecoins -->
+            <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="hongkong">
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/hk-stablecoin-licensing-first-cohort.webp" alt="Hong Kong Financial District" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
+                        <a href="insights/hk-stablecoin-licensing-first-cohort.html" class="before:absolute before:inset-0">香港数码港元与合规稳定币元年：首批牌照落地与离岸流动性新秩序</a>
+                    </h3>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">香港金管局向Anchorpoint与汇丰颁发首批法币稳定币发行人牌照，“36进2”严审背后的100%全额储备存管与跨境贸易T+0清算革命。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Apr 18, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 2: Global Wealth Shift -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="hongkong">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/global-wealth-shift-2026.webp" alt="Hong Kong Capital Flow" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/global-wealth-shift-2026.webp" alt="Hong Kong Capital Flow" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/global-wealth-shift-2026.html" class="before:absolute before:inset-0">2026全球财富大位移：华人资本为何正集体涌入东南亚？</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">追踪超过50亿美元规模的亚洲家族办公室资金流动方向，揭示下一代资本如何通过高频算法完成资产重组。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">May 01, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">追踪超过50亿美元规模的亚洲家族办公室资金流动方向，揭示下一代资本如何通过高频算法完成资产重组。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">May 01, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 3: ASEAN Infrastructure -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="asean">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/asean-infrastructure-revolution.webp" alt="ASEAN Infrastructure" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/asean-infrastructure-revolution.webp" alt="ASEAN Infrastructure" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/asean-infrastructure-revolution.html" class="before:absolute before:inset-0">东盟基建革命：泛亚走廊与华人实业的百年战略锚定</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析跨境铁路网络打通后，超大型综合基建项目如何将大宗商品流转时间骤减并重新划定制造业版图。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Nov 18, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析跨境铁路网络打通后，超大型综合基建项目如何将大宗商品流转时间骤减并重新划定制造业版图。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Nov 18, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 4: Generative AI Supply Chain -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/generative-ai-supply-chain.webp" alt="Generative AI supply chain" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/generative-ai-supply-chain.webp" alt="Generative AI supply chain" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/generative-ai-supply-chain.html" class="before:absolute before:inset-0">生成式 AI 与供应链重塑：消除跨国底层制造的物理阻力</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">工业 5.0 的真正价值不在于自动化生产，而在于使用机器视觉与预测性算法彻底抹平地理距离带来的不确定性。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Oct 30, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">9 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">工业 5.0 的真正价值不在于自动化生产，而在于使用机器视觉与预测性算法彻底抹平地理距离带来的不确定性。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Oct 30, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">9 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 5: Macau Non-Gaming -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="macau">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/macau-non-gaming-capital.webp" alt="Macau Non-Gaming Properties" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms] object-top" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/macau-non-gaming-capital.webp" alt="Macau Non-Gaming Properties" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms] object-top" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/macau-non-gaming-capital.html" class="before:absolute before:inset-0">亚洲文旅新极点：澳门非博彩高能物业的资本飞轮逻辑</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">跳脱传统娱乐经济，透视高端沉浸式文旅空间、国际顶尖会展（MICE）与高端零售如何再造城市的资本造血引擎。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Sep 14, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">14 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">跳脱传统娱乐经济，透视高端沉浸式文旅空间、国际顶尖会展（MICE）与高端零售如何再造城市的资本造血引擎。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Sep 14, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 6: AI Chinese Tech Leaders -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/ai-chinese-tech-leaders.webp" alt="AI Semiconductor" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/ai-chinese-tech-leaders.webp" alt="AI Semiconductor" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology / Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/ai-chinese-tech-leaders.html" class="before:absolute before:inset-0">AI时代的华人科技领袖：技术愿景与全球话语权</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">全面梳理以黄仁勋等为代表的华人AI领袖的技术布局，深度探索全球智能化浪潮下的中国智慧。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Apr 10, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">11 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">全面梳理以黄仁勋等为代表的华人AI领袖的技术布局，深度探索全球智能化浪潮下的中国智慧。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Apr 10, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">11 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 7: Sustainability as Currency -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/sustainability-as-currency.webp" alt="Sustainability" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/sustainability-as-currency.webp" alt="Sustainability" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Capital</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/sustainability-as-currency.html" class="before:absolute before:inset-0">可持续发展作为全新商业通用货币：华人实业的绿色转型战略</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">在低碳环保成为共识的今天，华人跨国实业巨头如何将ESG指标转化为实际的商业信用资产。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Mar 05, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">13 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">在低碳环保成为共识的今天，华人跨国实业巨头如何将ESG指标转化为实际的商业信用资产。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Mar 05, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">13 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Card 8: Generational Succession -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/generational-succession-2026.webp" alt="Family succession" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/generational-succession-2026.webp" alt="Family succession" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Capital</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/generational-succession-2026.html" class="before:absolute before:inset-0">2026华人家族企业代际传承报告：财富与远见的可持续交付</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">透视全球超大型华人家族办公室及跨国实业在接班人培养、现代公司治理等层面的深度探索。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Feb 15, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">14 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">透视全球超大型华人家族办公室及跨国实业在接班人培养、现代公司治理等层面的深度探索。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Feb 15, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 1: 2026全球华人科技领袖TOP 10 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/top-10-global-chinese-tech-leaders-2026.webp" alt="Top 10 Leaders" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/top-10-global-chinese-tech-leaders-2026.webp" alt="Top 10 Leaders" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology / Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/top-10-global-chinese-tech-leaders-2026.html" class="before:absolute before:inset-0">2026全球华人科技领袖TOP 10：谁在重塑下一个十年？</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">从Jensen Huang到张一鸣，全面梳理2026年全球最具影响力的十大华人科技领袖，深度剖析他们的战略布局与技术愿景。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Apr 15, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">13 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">从Jensen Huang到张一鸣，全面梳理2026年全球最具影响力的十大华人科技领袖，深度剖析他们的战略布局与技术愿景。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Apr 15, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">13 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 2: 东南亚最具影响力华人企业家：马来西亚篇 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="asean">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/malaysia-chinese-business-leaders.webp" alt="Malaysia Leaders" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/malaysia-chinese-business-leaders.webp" alt="Malaysia Leaders" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/malaysia-chinese-business-leaders.html" class="before:absolute before:inset-0">东南亚最具影响力华人企业家：马来西亚篇</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度解析马来西亚华人商业精英如何在多元文化背景下，建立横跨多个行业的商业版图。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Mar 28, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">11 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度解析马来西亚华人商业精英如何在多元文化背景下，建立横跨多个行业的商业版图。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Mar 28, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">11 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 3: 香港华人商业领袖：百年商脉如何延续？ -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="hongkong">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/hong-kong-chinese-business-legacy.webp" alt="Hong Kong Legacy" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/hong-kong-chinese-business-legacy.webp" alt="Hong Kong Legacy" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/hong-kong-chinese-business-legacy.html" class="before:absolute before:inset-0">香港华人商业领袖：百年商脉如何延续？</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">香港作为全球华人商业中心的百年历史，解析李嘉诚等传奇人物如何奠定现代华人商业基因。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Mar 10, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">香港作为全球华人商业中心的百年历史，解析李嘉诚等传奇人物如何奠定现代华人商业基因。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Mar 10, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 4: 新加坡华人商业精英：全球化布局的核心枢纽 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="asean">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/singapore-chinese-business-elite.webp" alt="Singapore Hub" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms] p-8 object-contain" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/singapore-chinese-business-elite.webp" alt="Singapore Hub" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms] p-8 object-contain" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/singapore-chinese-business-elite.html" class="before:absolute before:inset-0">新加坡华人商业精英：全球化布局的核心枢纽</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">新加坡如何成为全球华人资本与商业人才的汇聚中心，解析新加坡华人企业家的全球化战略。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Feb 20, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">10 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">新加坡如何成为全球华人资本与商业人才的汇聚中心，解析新加坡华人企业家的全球化战略。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Feb 20, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">10 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 5: 全球华人家族企业：代际传承的成功秘诀 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-family-business-succession.webp" alt="Family governance" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-family-business-succession.webp" alt="Family governance" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-family-business-succession.html" class="before:absolute before:inset-0">全球华人家族企业：代际传承的成功秘诀</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深入研究全球顶尖华人家族企业如何在代际传承中保持竞争力，揭秘成功交接背后的战略与文化密码。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Feb 05, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">14 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深入研究全球顶尖华人家族企业如何在代际传承中保持竞争力，揭秘成功交接背后的战略与文化密码。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Feb 05, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 6: 东南亚华人资本布局2026：马来西亚与新加坡 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="asean">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/southeast-asia-chinese-capital-2026.webp" alt="Capital Flow" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/southeast-asia-chinese-capital-2026.webp" alt="Capital Flow" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/southeast-asia-chinese-capital-2026.html" class="before:absolute before:inset-0">东南亚华人资本布局2026：马来西亚与新加坡</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">追踪超过200亿美元华人资本在东南亚的最新布局，解析马来西亚与新加坡如何成为下一轮全球财富增长的核心枢纽。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jan 25, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">11 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">追踪超过200亿美元华人资本在东南亚的最新布局，解析马来西亚与新加坡如何成为下一轮全球财富增长的核心枢纽。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jan 25, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">11 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 7: 华人家族办公室全球投资趋势分析 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-family-office-investment-trends.webp" alt="Family office" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-family-office-investment-trends.webp" alt="Family office" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-family-office-investment-trends.html" class="before:absolute before:inset-0">华人家族办公室全球投资趋势分析</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析全球顶尖华人超高净值家族如何通过家族办公室配置资产，从传统房地产转向科技、私募与另类投资。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jan 10, 2026</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析全球顶尖华人超高净值家族如何通过家族办公室配置资产，从传统房地产转向科技、私募与另类投资。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jan 10, 2026</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 8: 华人企业上市潮：纳斯达克vs港交所vs新交所 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-company-ipo-strategy.webp" alt="IPO strategy" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms] object-top" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-company-ipo-strategy.webp" alt="IPO strategy" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms] object-top" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-company-ipo-strategy.html" class="before:absolute before:inset-0">华人企业上市潮：纳斯达克vs港交所vs新交所</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度比较华人企业选择在纳斯达克、港交所或新加坡交易所上市的战略考量与利弊分析。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Dec 15, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">10 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度比较华人企业选择在纳斯达克、港交所或新加坡交易所上市的战略考量与利弊分析。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Dec 15, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">10 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 9: 中国资本出海东南亚：机遇与风险全解析 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital region" data-region="asean">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/china-capital-southeast-asia.webp" alt="China capital SEA" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/china-capital-southeast-asia.webp" alt="China capital SEA" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/china-capital-southeast-asia.html" class="before:absolute before:inset-0">中国资本出海东南亚：机遇与风险全解析</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">全面解析中国资本进入东南亚市场的战略动因、投资热点行业与潜在风险，为华人投资者提供权威决策参考。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Nov 28, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">13 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">全面解析中国资本进入东南亚市场的战略动因、投资热点行业与潜在风险，为华人投资者提供权威决策参考。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Nov 28, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">13 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 10: 华人亿万富豪财富增长策略深度报告 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="capital industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-billionaire-wealth-strategies.webp" alt="Wealth strategy" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-billionaire-wealth-strategies.webp" alt="Wealth strategy" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Capital Flow / Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-billionaire-wealth-strategies.html" class="before:absolute before:inset-0">华人亿万富豪财富增长策略深度报告</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度研究全球顶尖华人亿万富豪的财富增长路径，揭示他们在不同经济周期中保持财富增值的核心策略。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Nov 05, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">15 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度研究全球顶尖华人亿万富豪的财富增长路径，揭示他们在不同经济周期中保持财富增值的核心策略。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Nov 05, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">15 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 11: AI时代华人科技领袖：Jensen Huang与NVIDIA的崛起 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/jensen-huang-nvidia-ai-revolution.webp" alt="NVIDIA rising" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/jensen-huang-nvidia-ai-revolution.webp" alt="NVIDIA rising" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/jensen-huang-nvidia-ai-revolution.html" class="before:absolute before:inset-0">AI时代华人科技领袖：Jensen Huang与NVIDIA的崛起</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度剖析黄仁勋如何将一家图形芯片公司打造成全球AI基础设施的核心支柱，重塑现代计算架构的底层逻辑。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Oct 20, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度剖析黄仁勋如何将一家图形芯片公司打造成全球AI基础设施的核心支柱，重塑现代计算架构的底层逻辑。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Oct 20, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 12: 华人半导体巨头：重塑全球芯片格局 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-semiconductor-leaders.webp" alt="Semiconductor" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-semiconductor-leaders.webp" alt="Semiconductor" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-semiconductor-leaders.html" class="before:absolute before:inset-0">华人半导体巨头：重塑全球芯片格局</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">从英伟达到英特尔，全面梳理华人领袖在全球半导体行业的战略布局，解析芯片战争背后的华人力量。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Oct 05, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">11 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">从英伟达到英特尔，全面梳理华人领袖在全球半导体行业的战略布局，解析芯片战争背后的华人力量。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Oct 05, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">11 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 13: 字节跳动与TikTok：张一鸣如何改变全球内容消费 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/zhang-yiming-bytedance-tiktok.webp" alt="ByteDance" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/zhang-yiming-bytedance-tiktok.webp" alt="ByteDance" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/zhang-yiming-bytedance-tiktok.html" class="before:absolute before:inset-0">字节跳动与TikTok：张一鸣如何改变全球内容消费</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度解析张一鸣如何以算法推荐技术为核心，将字节跳动打造成全球最具影响力的内容科技帝国。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Sep 18, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">13 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度解析张一鸣如何以算法推荐技术为核心，将字节跳动打造成全球最具影响力的内容科技帝国。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Sep 18, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">13 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 14: 华人新能源车企崛起：比亚迪与全球竞争格局 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-ev-industry-global-rise.webp" alt="EV rising" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-ev-industry-global-rise.webp" alt="EV rising" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology / Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-ev-industry-global-rise.html" class="before:absolute before:inset-0">华人新能源车企崛起：比亚迪与全球竞争格局</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析以比亚迪为代表的华人新能源车企如何在全球市场快速崛起，对特斯拉等传统强者构成战略性挑战。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Aug 30, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">解析以比亚迪为代表的华人新能源车企如何在全球市场快速崛起，对特斯拉等传统强者构成战略性挑战。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Aug 30, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 15: 华人科技独角兽：下一个十年的颠覆者 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-tech-unicorns-next-decade.webp" alt="Unicorns" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-tech-unicorns-next-decade.webp" alt="Unicorns" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-tech-unicorns-next-decade.html" class="before:absolute before:inset-0">华人科技独角兽：下一个十年的颠覆者</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">盘点全球华人科技独角兽企业的最新动态，解析哪些领域将在未来十年产生下一批百亿级华人科技巨头。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Aug 10, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">10 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">盘点全球华人科技独角兽企业的最新动态，解析哪些领域将在未来十年产生下一批百亿级华人科技巨头。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Aug 10, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">10 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 16: 李嘉诚商业帝国：从白手起家到全球布局 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/li-ka-shing-business-empire.webp" alt="Li Ka-shing" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/li-ka-shing-business-empire.webp" alt="Li Ka-shing" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/li-ka-shing-business-empire.html" class="before:absolute before:inset-0">李嘉诚商业帝国：从白手起家到全球布局</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">全面回顾李嘉诚从香港贫困少年到全球最具影响力华人企业家的传奇历程，解析其商业帝国的战略密码。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jul 25, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">14 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">全面回顾李嘉诚从香港贫困少年到全球最具影响力华人企业家的传奇历程，解析其商业帝国的战略密码。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jul 25, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">14 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 17: 郭鹤年与糖王传奇：东南亚商业王朝的崛起 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry region" data-region="asean">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/robert-kuok-sugar-king-legacy.webp" alt="Robert Kuok" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/robert-kuok-sugar-king-legacy.webp" alt="Robert Kuok" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Region</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/robert-kuok-sugar-king-legacy.html" class="before:absolute before:inset-0">郭鹤年与糖王传奇：东南亚商业王朝的崛起</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度揭秘郭鹤年从糖业起家到建立横跨20余国商业王朝的传奇故事，以及其对东南亚商业格局的深远影响。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jul 10, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">13 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度揭秘郭鹤年从糖业起家到建立横跨20余国商业王朝的传奇故事，以及其对东南亚商业格局的深远影响。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jul 10, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">13 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 18: 马云与阿里巴巴：中国电商革命的缔造者 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/jack-ma-alibaba-ecommerce-revolution.webp" alt="Jack Ma" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/jack-ma-alibaba-ecommerce-revolution.webp" alt="Jack Ma" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/jack-ma-alibaba-ecommerce-revolution.html" class="before:absolute before:inset-0">马云与阿里巴巴：中国电商革命的缔造者</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">回顾马云如何以英语教师身份白手起家，缔造改变中国乃至全球商业规则的电商与金融科技帝国。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jun 20, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">12 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">回顾马云如何以英语教师身份白手起家，缔造改变中国乃至全球商业规则的电商与金融科技帝国。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jun 20, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">12 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 19: 腾讯帝国：马化腾如何建造数字社交王国 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry technology" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/pony-ma-tencent-social-empire.webp" alt="Pony Ma" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/pony-ma-tencent-social-empire.webp" alt="Pony Ma" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry / Technology</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/pony-ma-tencent-social-empire.html" class="before:absolute before:inset-0">腾讯帝国：马化腾如何建造数字社交王国</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度解析马化腾如何以QQ起步，将腾讯打造成覆盖社交、游戏、金融、云计算的全方位数字生态帝国。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">Jun 05, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">11 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">深度解析马化腾如何以QQ起步，将腾讯打造成覆盖社交、游戏、金融、云计算的全方位数字生态帝国。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">Jun 05, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">11 MIN READ</span>
                     </div>
                 </div>
             </article>
 
             <!-- Article 20: 华人商业精英的成功方程式 -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="industry" data-region="">
-                <div class="aspect-[16/10] bg-neutral-900 overflow-hidden relative mb-8 border border-white/5">
-                    <img src="assets/images/insights/chinese-business-elite-success-formula.webp" alt="Success traits" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-70 transition-transform duration-[1200ms]" loading="lazy"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#121212]/80 via-transparent to-transparent"></div>
+                <div class="aspect-[16/10] bg-neutral-100 overflow-hidden relative mb-8 border border-black/10">
+                    <img src="assets/images/insights/chinese-business-elite-success-formula.webp" alt="Success traits" class="w-full h-full object-cover group-hover:scale-105 group-hover:opacity-100 opacity-90 transition-transform duration-[1200ms]" loading="lazy"/>
                 </div>
                 <div class="flex flex-col flex-grow">
                     <span class="sans-label text-xs text-gold tracking-[0.2em] font-bold uppercase mb-4 block">Industry</span>
-                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-white group-hover:text-gold transition-colors leading-[1.4]">
+                    <h3 class="serif-display text-2xl lg:text-3xl font-bold mb-6 text-[#1b1c1a] group-hover:text-primary transition-colors leading-[1.4]">
                         <a href="insights/chinese-business-elite-success-formula.html" class="before:absolute before:inset-0">华人商业精英的成功方程式：共同特质深度分析</a>
                     </h3>
-                    <p class="text-[#e8e6e1] text-sm md:text-base leading-loose mb-10 flex-grow font-light">通过深度分析全球顶尖华人商业领袖的成长历程与决策模式，提炼出华人企业家群体共有的核心成功特质。</p>
-                    <div class="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">May 20, 2025</span>
-                        <div class="w-1 h-1 bg-white/20 rounded-full"></div>
-                        <span class="sans-label text-[10px] text-white/80 tracking-widest uppercase">10 MIN READ</span>
+                    <p class="text-secondary text-sm md:text-base leading-loose mb-10 flex-grow font-light">通过深度分析全球顶尖华人商业领袖的成长历程与决策模式，提炼出华人企业家群体共有的核心成功特质。</p>
+                    <div class="flex items-center gap-4 border-t border-black/10 pt-6 mt-auto">
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">May 20, 2025</span>
+                        <div class="w-1 h-1 bg-black/20 rounded-full"></div>
+                        <span class="sans-label text-[10px] text-secondary/80 tracking-widest uppercase">10 MIN READ</span>
                     </div>
                 </div>
             </article>
@@ -919,37 +1144,81 @@ function toggleFaqIns(btn) {
 </script>
 
 <!-- Footer Shell -->
-<footer class="w-full py-16 px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 bg-[#121212] border-t border-white/5 mt-auto">
-
-    <div>
-        <div class="mb-6">
-            <img src="assets/images/全球十大华人 Logo（背景 - 透明）.png" alt="成功华人 Logo" class="w-auto drop-shadow-xl h-12 md:h-16 scale-[2.5] md:scale-[2.8] origin-left translate-x-2" />
-        </div>
-        <p class="serif-display text-sm text-[#faf9f6] opacity-80 leading-relaxed max-w-xs font-light">
-            一份权威的全球指数，追踪在世界舞台上产生最大影响力的成功商业领袖与企业。
-        </p>
-    </div>
-    <div class="flex flex-col gap-4">
-        <h5 class="sans-label font-bold text-[#bb0002] uppercase text-xs tracking-widest">网站导航</h5>
-        <div class="grid grid-cols-2 gap-y-3">
-            <a class="sans-label text-sm text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="about.html">关于我们</a>
-            <a class="sans-label text-sm text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="benefits.html">核心优势</a>
-            <a class="sans-label text-sm text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="honorees.html">历届荣誉</a>
-            <a class="sans-label text-sm text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="faq.html">常见问题</a>
-        </div>
-    </div>
-    <div class="flex flex-col gap-6">
-        <div class="flex flex-wrap gap-x-6 gap-y-3">
-            <a class="sans-label text-xs text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="#">隐私权政策</a>
-            <a class="sans-label text-xs text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="#">服务条款</a>
-            <a class="sans-label text-xs text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="#">Cookie 政策</a>
-            <a class="sans-label text-xs text-[#faf9f6]/80 hover:text-white transition-opacity tracking-widest uppercase" href="#">联系我们</a>
-        </div>
+<footer class="w-full py-16 lg:py-20 px-4 md:px-8 bg-[#121212] border-t border-white/10 mt-auto">
+    <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
         
-    </div>
-            <p class="sans-label text-xs text-[#faf9f6]/50 leading-relaxed mt-8 pt-6 border-t border-white/10 w-full col-span-full text-center md:text-left">
-                © 2026 全球十大华人. 保留所有权利。本平台由国际华人基金会（Yayasan Keturunan Cina Antarabangsa / International Chinese Foundation，注册号：PPM-029-10-29042016）联合全球权威编辑团队独立运营与管理。
+        <!-- Column 1: Brand (4 cols) -->
+        <div class="lg:col-span-4 flex flex-col">
+            <div class="mb-6">
+                <img src="assets/images/全球十大华人 Logo（背景 - 透明）.png" alt="全球十大华人 Logo" class="w-auto drop-shadow-xl h-12 md:h-14 scale-[2.3] md:scale-[2.5] origin-left translate-x-2" loading="lazy" />
+            </div>
+            <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
+                连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。
             </p>
+            <div class="flex items-center gap-2 text-xs text-gold/90 font-mono tracking-wider uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>
+                <span>International Chinese Foundation</span>
+            </div>
+        </div>
+
+        <!-- Column 2: Website Navigation (4 cols) -->
+        <div class="lg:col-span-4 flex flex-col">
+            <h5 class="sans-label font-bold text-[#bb0002] uppercase text-xs tracking-widest mb-6 flex items-center gap-2">
+                <span class="w-2 h-0.5 bg-[#bb0002] inline-block"></span>
+                网站导航
+            </h5>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-3.5">
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="insights.html">深度洞察</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="program.html">评选盛典</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="interviews.html">独家专访</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="about.html">关于我们</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="honorees.html">历届荣誉</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="benefits.html">核心优势</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="enterprise-certification.html">企业认证</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="faq.html">常见问题</a>
+            </div>
+        </div>
+
+        <!-- Column 3: About / Brand Positioning / SEO Keywords (4 cols) -->
+        <div class="lg:col-span-4 flex flex-col">
+            <h5 class="sans-label font-bold text-[#bb0002] uppercase text-xs tracking-widest mb-6 flex items-center gap-2">
+                <span class="w-2 h-0.5 bg-[#bb0002] inline-block"></span>
+                关于全球十大华人
+            </h5>
+            <p class="serif-display text-sm text-[#faf9f6]/75 leading-relaxed font-light mb-4">
+                全球十大华人基金会致力于连接全球华人商业力量，关注具有全球影响力的全球十大华人企业家、商业领袖与卓越企业，并通过全球十大华人评选、人物报道与专业内容，记录与传播华人商业力量在全球的发展与影响。
+            </p>
+            <div class="flex items-center gap-3 text-xs text-[#faf9f6]/40 font-mono tracking-wider pt-1">
+                <span>权威评价体系</span>
+                <span>·</span>
+                <span>全球华商网络</span>
+                <span>·</span>
+                <span>深度思想载体</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Legal Area -->
+    <div class="max-w-[1440px] mx-auto border-t border-white/10 mt-12 pt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 text-xs text-[#faf9f6]/50 serif-display">
+        <div class="max-w-3xl">
+            <p class="leading-relaxed text-[#faf9f6]/70 font-medium">
+                © 2026 全球十大华人 · 保留所有权利
+            </p>
+            <p class="mt-1.5 text-[11px] text-[#faf9f6]/40 leading-relaxed">
+                本平台由国际华人基金会（Yayasan Keturunan Cina Antarabangsa / International Chinese Foundation，注册号：PPM-029-10-29042016）联合全球权威编辑团队独立运营与管理。
+            </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 text-xs text-[#faf9f6]/60 flex-shrink-0">
+            <a class="hover:text-gold transition-colors" href="#">隐私权政策</a>
+            <span class="text-white/20">·</span>
+            <a class="hover:text-gold transition-colors" href="#">服务条款</a>
+            <span class="text-white/20">·</span>
+            <a class="hover:text-gold transition-colors" href="#">Cookie 政策</a>
+            <span class="text-white/20">·</span>
+            <a class="hover:text-gold transition-colors" href="#">联系我们</a>
+        </div>
+    </div>
 </footer>
 
 <script id="filter-script">
@@ -1026,11 +1295,11 @@ function toggleFaqIns(btn) {
         function setActiveMainTab(filterValue) {
             mainTabs.forEach(tab => {
                 if (tab.getAttribute('data-filter') === filterValue) {
-                    tab.classList.remove('text-secondary', 'border-transparent');
+                    tab.classList.remove('text-[#faf9f6]/70', 'hover:text-[#faf9f6]', 'border-transparent');
                     tab.classList.add('text-gold', 'border-gold', 'font-bold');
                 } else {
                     tab.classList.remove('text-gold', 'border-gold', 'font-bold');
-                    tab.classList.add('text-secondary', 'border-transparent');
+                    tab.classList.add('text-[#faf9f6]/70', 'hover:text-[#faf9f6]', 'border-transparent');
                 }
             });
         }
@@ -1038,11 +1307,11 @@ function toggleFaqIns(btn) {
         function setActiveRegionLink(regionValue) {
             regionLinks.forEach(link => {
                 if (link.getAttribute('data-region-filter') === regionValue) {
-                    link.classList.remove('text-secondary');
+                    link.classList.remove('text-[#faf9f6]/70', 'hover:text-[#faf9f6]');
                     link.classList.add('text-gold', 'font-bold');
                 } else {
                     link.classList.remove('text-gold', 'font-bold');
-                    link.classList.add('text-secondary');
+                    link.classList.add('text-[#faf9f6]/70', 'hover:text-[#faf9f6]');
                 }
             });
         }
