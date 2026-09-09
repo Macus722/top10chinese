@@ -190,7 +190,7 @@
 <nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
     <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
         <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
-            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain md:drop-shadow-xl" />
+            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-14 w-auto object-contain md:drop-shadow-xl" />
         </a>
         
         <div class="hidden md:flex gap-4 lg:gap-8 items-center">
@@ -214,11 +214,8 @@
             </div>
         </div>
         
-        <div class="flex items-center gap-3 md:gap-4 z-50 relative">
-            <button class="bg-primary text-on-primary px-4 md:px-6 py-2 serif-display uppercase tracking-widest text-[0.65rem] md:text-[0.75rem] font-bold active:scale-95 transition-transform whitespace-nowrap shadow-lg shadow-primary/20">
-                订阅最新资讯
-            </button>
-            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-1 focus:outline-none">
+        <div class="flex items-center z-50 relative">
+            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-2 -mr-2 min-h-[44px] min-w-[44px] flex items-center justify-center focus:outline-none" aria-label="切换导航菜单">
                 <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
             </button>
         </div>
@@ -340,41 +337,41 @@
 </div>
 
 <!-- AEO Quick Answer Block -->
-<div class="w-full border-y py-8 px-4 md:px-8" style="background-color:#1b1c1a;border-color:rgba(197,160,89,0.2)">
-    <div class="max-w-[1440px] mx-auto flex items-start gap-5">
+<div class="w-full border-y py-6 md:py-8 px-4 md:px-8" style="background-color:#1b1c1a;border-color:rgba(197,160,89,0.2)">
+    <div class="max-w-[1440px] mx-auto flex items-start gap-4 md:gap-5">
         <span class="material-symbols-outlined text-xl mt-0.5 flex-shrink-0" style="color:#c5a059">info</span>
         <div>
-            <p class="sans-label text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style="color:#c5a059">快速解答 · Quick Answer</p>
-            <p class="sans-label text-sm md:text-base leading-relaxed font-light" style="color:rgba(250,249,246,0.80)">全球十大华人是全球最具权威的全球十大华人企业家排名 2026与华人商业领袖成功故事研究平台。我们长期追踪包括东南亚华人企业家、华人科技企业家与华人地产大亨在内的白手起家的华人企业家，深度分析其身家与商业版图，见证全球华人商业力量的崛起。</p>
+            <p class="sans-label text-[10px] tracking-[0.3em] uppercase font-bold mb-1.5 md:mb-2" style="color:#c5a059">快速解答 · Quick Answer</p>
+            <p class="sans-label text-xs sm:text-sm md:text-base leading-relaxed font-light" style="color:rgba(250,249,246,0.80)">全球十大华人是全球最具权威的全球十大华人企业家排名 2026与华人商业领袖成功故事研究平台。我们长期追踪包括东南亚华人企业家、华人科技企业家与华人地产大亨在内的白手起家的华人企业家，深度分析其身家与商业版图，见证全球华人商业力量的崛起。</p>
         </div>
     </div>
 </div>
 
 <!-- 4. Testimonials Section -->
-<section class="bg-background py-16 md:py-24 px-4 md:px-8 border-t border-outline-variant/10">
+<section class="bg-background py-12 md:py-24 px-4 md:px-8 border-t border-outline-variant/10">
 <div class="max-w-[1440px] mx-auto">
-<div class="mb-12 md:mb-16 flex flex-col md:flex-row justify-between items-end max-w-[1440px] mx-auto px-4 md:px-8 gap-8">
-    <div>
-        <h2 class="sans-label text-xs uppercase tracking-[0.4em] font-bold text-primary mb-4">旗舰主榜单 FLAGSHIP INDEX</h2>
-        <h3 class="serif-display text-5xl md:text-7xl font-bold text-on-surface leading-tight">全球十大华人</h3>
-        <p class="serif-display text-5xl md:text-7xl font-black text-on-surface-variant opacity-20 -mt-2">2025–2026</p>
+<div class="mb-8 md:mb-16 flex flex-col md:flex-row justify-between items-center md:items-end text-center md:text-left max-w-[1440px] mx-auto px-2 sm:px-4 md:px-8 gap-3 md:gap-8">
+    <div class="flex flex-col items-center md:items-start">
+        <h2 class="sans-label text-[10px] md:text-xs uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold text-primary mb-1.5 md:mb-4">旗舰主榜单 FLAGSHIP INDEX</h2>
+        <h3 class="serif-display text-[32px] md:text-7xl font-bold text-on-surface leading-tight">全球十大华人</h3>
+        <p class="serif-display text-[26px] md:text-7xl font-black text-on-surface-variant opacity-20 -mt-1 md:-mt-2">2025–2026</p>
     </div>
-    <a href="honorees.html" class="flex items-center gap-2 group border-b border-on-surface pb-1 text-on-surface hover:text-primary hover:border-primary transition-all duration-300">
-        <span class="sans-label text-xs uppercase tracking-[0.2em] font-bold">View Full Index</span>
+    <a href="honorees.html" class="inline-flex items-center gap-1.5 md:gap-2 group border-b border-on-surface pb-0.5 md:pb-1 text-on-surface hover:text-primary hover:border-primary transition-all duration-300 mt-2 md:mt-0">
+        <span class="sans-label text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold">View Full Index</span>
         <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
     </a>
 </div>
 
-<div class="max-w-[1440px] mx-auto px-4 md:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 lg:gap-16">
+<div class="max-w-[1440px] mx-auto px-2 sm:px-4 md:px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4 md:gap-8 lg:gap-12 lg:gap-16">
         <!-- Card 1 -->
         <article class="flex flex-col group cursor-pointer" onclick="location.href='honorees/jensen-huang.html'">
-            <div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6">
-                <img alt="Jensen Huang" class="w-full h-full object-cover object-[25%_center] transition-all duration-700" src="assets/images/0x0.webp" loading="lazy"/>
+            <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container mb-2.5 sm:mb-3 md:mb-6">
+                <img alt="Jensen Huang" class="w-full h-full object-cover object-[25%_center] group-hover:scale-105 transition-all duration-700" src="assets/images/0x0.webp" loading="lazy"/>
             </div>
-            <h4 class="serif-display text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Jensen Huang</h4>
-            <p class="font-body text-sm text-secondary tracking-widest uppercase mt-2 mb-6">NVIDIA • CEO</p>
-            <div class="flex items-center gap-2 text-primary mt-auto">
+            <h4 class="serif-display text-base sm:text-lg md:text-2xl font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">Jensen Huang</h4>
+            <p class="font-body text-[10px] sm:text-xs md:text-sm text-secondary tracking-wider md:tracking-widest uppercase mt-0.5 sm:mt-1 md:mt-2 mb-0 md:mb-6 leading-tight">NVIDIA • CEO</p>
+            <div class="hidden md:flex items-center gap-2 text-primary mt-auto">
                 <span class="sans-label text-[10px] uppercase tracking-[0.2em] font-bold">查看完整档案</span>
                 <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">east</span>
             </div>
@@ -382,12 +379,12 @@
         
         <!-- Card 2 -->
         <article class="flex flex-col group cursor-pointer lg:mt-16" onclick="location.href='honorees/li-ka-shing.html'">
-            <div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6">
-                <img alt="Li Ka-shing" class="w-full h-full object-cover group-hover:-0 transition-all duration-700 object-top" src="assets/images/images.jpeg" loading="lazy"/>
+            <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container mb-2.5 sm:mb-3 md:mb-6">
+                <img alt="Li Ka-shing" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 object-top" src="assets/images/images.jpeg" loading="lazy"/>
             </div>
-            <h4 class="serif-display text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Li Ka-shing</h4>
-            <p class="font-body text-sm text-secondary tracking-widest uppercase mt-2 mb-6">CK Hutchison • Senior Advisor</p>
-            <div class="flex items-center gap-2 text-on-surface group-hover:text-primary mt-auto transition-colors">
+            <h4 class="serif-display text-base sm:text-lg md:text-2xl font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">Li Ka-shing</h4>
+            <p class="font-body text-[10px] sm:text-xs md:text-sm text-secondary tracking-wider md:tracking-widest uppercase mt-0.5 sm:mt-1 md:mt-2 mb-0 md:mb-6 leading-tight">CK Hutchison • Senior Advisor</p>
+            <div class="hidden md:flex items-center gap-2 text-on-surface group-hover:text-primary mt-auto transition-colors">
                 <span class="sans-label text-[10px] uppercase tracking-[0.2em] font-bold">查看完整档案</span>
                 <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">east</span>
             </div>
@@ -395,12 +392,12 @@
         
         <!-- Card 3 -->
         <article class="flex flex-col group cursor-pointer" onclick="location.href='honorees/zhang-yiming.html'">
-            <div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6">
-                <img alt="Zhang Yiming" class="w-full h-full object-cover group-hover:-0 transition-all duration-700" src="assets/images/张一鸣-online.jpeg" loading="lazy"/>
+            <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container mb-2.5 sm:mb-3 md:mb-6">
+                <img alt="Zhang Yiming" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" src="assets/images/张一鸣-online.jpeg" loading="lazy"/>
             </div>
-            <h4 class="serif-display text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Zhang Yiming</h4>
-            <p class="font-body text-sm text-secondary tracking-widest uppercase mt-2 mb-6">ByteDance • Founder</p>
-            <div class="flex items-center gap-2 text-on-surface group-hover:text-primary mt-auto transition-colors">
+            <h4 class="serif-display text-base sm:text-lg md:text-2xl font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">Zhang Yiming</h4>
+            <p class="font-body text-[10px] sm:text-xs md:text-sm text-secondary tracking-wider md:tracking-widest uppercase mt-0.5 sm:mt-1 md:mt-2 mb-0 md:mb-6 leading-tight">ByteDance • Founder</p>
+            <div class="hidden md:flex items-center gap-2 text-on-surface group-hover:text-primary mt-auto transition-colors">
                 <span class="sans-label text-[10px] uppercase tracking-[0.2em] font-bold">查看完整档案</span>
                 <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">east</span>
             </div>
@@ -408,12 +405,12 @@
         
         <!-- Card 4 -->
         <article class="flex flex-col group cursor-pointer lg:mt-16" onclick="location.href='honorees/robert-kuok.html'">
-            <div class="aspect-[3/4] overflow-hidden bg-surface-container mb-6">
-                <img alt="Robert Kuok" class="w-full h-full object-cover group-hover:-0 transition-all duration-700" src="assets/images/682f9fe8e80959faa7a0c5a62c64e3a6.jpg" loading="lazy"/>
+            <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container mb-2.5 sm:mb-3 md:mb-6">
+                <img alt="Robert Kuok" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" src="assets/images/682f9fe8e80959faa7a0c5a62c64e3a6.jpg" loading="lazy"/>
             </div>
-            <h4 class="serif-display text-2xl font-bold text-on-surface group-hover:text-primary transition-colors">Robert Kuok</h4>
-            <p class="font-body text-sm text-secondary tracking-widest uppercase mt-2 mb-6">Kuok Group • Founder</p>
-            <div class="flex items-center gap-2 text-on-surface group-hover:text-primary mt-auto transition-colors">
+            <h4 class="serif-display text-base sm:text-lg md:text-2xl font-bold text-on-surface group-hover:text-primary transition-colors leading-snug">Robert Kuok</h4>
+            <p class="font-body text-[10px] sm:text-xs md:text-sm text-secondary tracking-wider md:tracking-widest uppercase mt-0.5 sm:mt-1 md:mt-2 mb-0 md:mb-6 leading-tight">Kuok Group • Founder</p>
+            <div class="hidden md:flex items-center gap-2 text-on-surface group-hover:text-primary mt-auto transition-colors">
                 <span class="sans-label text-[10px] uppercase tracking-[0.2em] font-bold">查看完整档案</span>
                 <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">east</span>
             </div>
@@ -423,75 +420,75 @@
 </div>
 </section>
 <!-- Categories Section -->
-<section aria-label="Award Categories" class="py-16 md:py-32 px-4 md:px-8 bg-white border-t border-outline-variant/10">
+<section aria-label="Award Categories" class="py-12 md:py-32 px-4 md:px-8 bg-white border-t border-outline-variant/10">
 <div class="max-w-[1440px] mx-auto">
-<div class="flex justify-between items-end mb-16">
-<div>
-<h3 class="serif-display text-5xl md:text-6xl font-bold leading-none">评选类别</h3>
-<p class="font-body text-secondary mt-4 max-w-md">五大全球影响力支柱，重新定义 21 世纪的商业新视野。</p>
+<div class="flex flex-col items-center text-center md:flex-row md:justify-between md:items-end md:text-left mb-8 md:mb-16">
+<div class="flex flex-col items-center md:items-start">
+<h3 class="serif-display text-[32px] md:text-6xl font-bold leading-tight md:leading-none">评选类别</h3>
+<p class="font-body text-secondary text-xs sm:text-sm md:text-base mt-2 md:mt-4 max-w-md">五大全球影响力支柱，重新定义 21 世纪的商业新视野。</p>
 </div>
 <div class="hidden md:block">
 <span class="material-symbols-outlined text-6xl text-surface-variant">grid_view</span>
 </div>
 </div>
 <nav aria-label="Category filter">
-<div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-6 gap-3 sm:gap-4 md:gap-4">
 <!-- Leaders -->
-<a href="categories/industry-leaders.html" class="md:col-span-4 bg-primary text-on-primary p-12 min-h-[400px] flex flex-col justify-between group cursor-pointer overflow-hidden relative">
+<a href="categories/industry-leaders.html" class="col-span-1 md:col-span-4 bg-primary text-on-primary p-4 sm:p-6 md:p-12 aspect-[4/5] sm:aspect-auto sm:min-h-[220px] md:min-h-[400px] flex flex-col justify-between group cursor-pointer overflow-hidden relative">
 <div class="absolute inset-0 opacity-10 scale-110 group-hover:scale-100 transition-transform duration-700">
 <img class="w-full h-full object-cover" data-alt="Luxury clock mechanism" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6r3PPi_uMN3NnI0W4fakumOhSOSotfK1vV6TjIqkN1fogSQAvQ1Y178coQtOIZO3PRbqZV2jAKMMRarUBCuO3uEZcf7wLPUatHF0XM2J-MaQR7vDKyDqsmJYveAiKQ4TV7IsEd3rehz0xMhdBkJs3BQjINaT2fOGCEcctwcAB325jbt6UWahdgzOhMJ-HAHba48O0eGXaFOY4uMI1d0HaXh84etQLv83AnmzGXU2nsZUylPApoTzGCY0P4CMbo52RClIG48PIbxM" loading="lazy"/>
 </div>
 <div class="relative z-10">
-<span class="sans-label text-xs tracking-[0.4em] uppercase opacity-70">第一类别</span>
-<h4 class="serif-display text-6xl font-black mt-4">行业领袖</h4>
+<span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase opacity-70">第一类别</span>
+<h4 class="serif-display text-xl sm:text-2xl md:text-6xl font-black mt-1.5 md:mt-4">行业领袖</h4>
 </div>
-<div class="relative z-10 flex justify-between items-end">
-<p class="max-w-xs font-body text-sm opacity-80 uppercase tracking-widest leading-relaxed">在跨国市场中为卓越确立全新标准。</p>
-<span class="material-symbols-outlined text-4xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="relative z-10 flex justify-between items-end mt-auto">
+<p class="hidden md:block max-w-xs font-body text-sm opacity-80 uppercase tracking-widest leading-relaxed">在跨国市场中为卓越确立全新标准。</p>
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl group-hover:translate-x-1 transition-transform ml-auto md:ml-0">arrow_forward</span>
 </div>
 </a>
 <!-- Disruptors -->
-<a href="categories/disruptors.html" class="md:col-span-2 bg-surface-container-high p-12 min-h-[400px] flex flex-col justify-between hover:bg-surface-container-highest transition-colors cursor-pointer group">
+<a href="categories/disruptors.html" class="col-span-1 md:col-span-2 bg-surface-container-high p-4 sm:p-6 md:p-12 aspect-[4/5] sm:aspect-auto sm:min-h-[220px] md:min-h-[400px] flex flex-col justify-between hover:bg-surface-container-highest transition-colors cursor-pointer group">
 <div>
-<span class="sans-label text-xs tracking-[0.4em] uppercase text-secondary">第二类别</span>
-<h4 class="serif-display text-4xl font-bold mt-4">破局者</h4>
+<span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase text-secondary">第二类别</span>
+<h4 class="serif-display text-xl sm:text-2xl md:text-4xl font-bold mt-1.5 md:mt-4">破局者</h4>
 </div>
-<div class="flex flex-col gap-4">
-<p class="font-body text-sm text-secondary uppercase tracking-widest">勇于打破常规，重塑商业游戏规则。</p>
-<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">bolt</span>
+<div class="flex flex-col gap-2 md:gap-4 items-end md:items-start mt-auto">
+<p class="hidden md:block font-body text-sm text-secondary uppercase tracking-widest">勇于打破常规，重塑商业游戏规则。</p>
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl group-hover:scale-110 transition-transform">bolt</span>
 </div>
 </a>
 <!-- Titans -->
-<a href="categories/titans.html" class="md:col-span-2 bg-on-surface text-surface p-12 min-h-[400px] flex flex-col justify-between hover:opacity-90 transition-opacity cursor-pointer group">
+<a href="categories/titans.html" class="col-span-1 md:col-span-2 bg-on-surface text-surface p-4 sm:p-6 md:p-12 aspect-[4/5] sm:aspect-auto sm:min-h-[220px] md:min-h-[400px] flex flex-col justify-between hover:opacity-90 transition-opacity cursor-pointer group">
 <div>
-<span class="sans-label text-xs tracking-[0.4em] uppercase opacity-50">第三类别</span>
-<h4 class="serif-display text-4xl font-bold mt-4">商业巨头</h4>
+<span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase opacity-50">第三类别</span>
+<h4 class="serif-display text-xl sm:text-2xl md:text-4xl font-bold mt-1.5 md:mt-4">商业巨头</h4>
 </div>
-<div class="flex flex-col gap-4">
-<p class="font-body text-sm opacity-60 uppercase tracking-widest">凭借空前规模和资源优势主导行业的巨头企业。</p>
-<span class="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform">account_balance</span>
+<div class="flex flex-col gap-2 md:gap-4 items-end md:items-start mt-auto">
+<p class="hidden md:block font-body text-sm opacity-60 uppercase tracking-widest">凭借空前规模和资源优势主导行业的巨头企业。</p>
+<span class="material-symbols-outlined text-2xl sm:text-3xl group-hover:scale-110 transition-transform">account_balance</span>
 </div>
 </a>
 <!-- Innovators -->
-<a href="categories/innovators.html" class="md:col-span-2 bg-surface-container-low p-12 min-h-[400px] flex flex-col justify-between border-l border-outline-variant/20 hover:bg-surface-variant transition-colors cursor-pointer group">
+<a href="categories/innovators.html" class="col-span-1 md:col-span-2 bg-surface-container-low p-4 sm:p-6 md:p-12 aspect-[4/5] sm:aspect-auto sm:min-h-[220px] md:min-h-[400px] flex flex-col justify-between border-l border-outline-variant/20 hover:bg-surface-variant transition-colors cursor-pointer group">
 <div>
-<span class="sans-label text-xs tracking-[0.4em] uppercase text-secondary">第四类别</span>
-<h4 class="serif-display text-4xl font-bold mt-4">创新先锋</h4>
+<span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase text-secondary">第四类别</span>
+<h4 class="serif-display text-xl sm:text-2xl md:text-4xl font-bold mt-1.5 md:mt-4">创新先锋</h4>
 </div>
-<div class="flex flex-col gap-4">
-<p class="font-body text-sm text-secondary uppercase tracking-widest">为下一个时代前沿开创颠覆性技术。</p>
-<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">lightbulb</span>
+<div class="flex flex-col gap-2 md:gap-4 items-end md:items-start mt-auto">
+<p class="hidden md:block font-body text-sm text-secondary uppercase tracking-widest">为下一个时代前沿开创颠覆性技术。</p>
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl group-hover:scale-110 transition-transform">lightbulb</span>
 </div>
 </a>
 <!-- Pioneers -->
-<a href="categories/pioneers.html" class="md:col-span-2 bg-surface-container text-on-surface p-12 min-h-[400px] flex flex-col justify-between hover:bg-primary hover:text-on-primary transition-all duration-300 cursor-pointer group">
+<a href="categories/pioneers.html" class="col-span-1 md:col-span-2 bg-surface-container text-on-surface p-4 sm:p-6 md:p-12 aspect-[4/5] sm:aspect-auto sm:min-h-[220px] md:min-h-[400px] flex flex-col justify-between hover:bg-primary hover:text-on-primary transition-all duration-300 cursor-pointer group">
 <div>
-<span class="sans-label text-xs tracking-[0.4em] uppercase text-secondary group-hover:text-on-primary">第五类别</span>
-<h4 class="serif-display text-4xl font-bold mt-4">开拓者</h4>
+<span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase text-secondary group-hover:text-on-primary">第五类别</span>
+<h4 class="serif-display text-xl sm:text-2xl md:text-4xl font-bold mt-1.5 md:mt-4">开拓者</h4>
 </div>
-<div class="flex flex-col gap-4">
-<p class="font-body text-sm text-secondary uppercase tracking-widest group-hover:text-on-primary">创造全新商业模式和生态领域的先行者。</p>
-<span class="material-symbols-outlined text-3xl group-hover:text-on-primary group-hover:scale-110 transition-transform">explore</span>
+<div class="flex flex-col gap-2 md:gap-4 items-end md:items-start mt-auto">
+<p class="hidden md:block font-body text-sm text-secondary uppercase tracking-widest group-hover:text-on-primary">创造全新商业模式和生态领域的先行者。</p>
+<span class="material-symbols-outlined text-2xl sm:text-3xl group-hover:text-on-primary group-hover:scale-110 transition-transform">explore</span>
 </div>
 </a>
 </div>
@@ -499,75 +496,99 @@
 </div>
 </section>
 <!-- 2. 3 Pathways to Recognition Section -->
-<section class="bg-background py-16 md:py-24 px-4 md:px-8 border-t border-outline-variant/10">
+<section class="bg-background py-12 md:py-24 px-4 md:px-8 border-t border-outline-variant/10">
 <div class="max-w-[1440px] mx-auto">
-<div class="mb-12">
-<h2 class="serif-display text-5xl md:text-7xl font-bold mb-8">三大提名通道</h2>
-<div class="h-px bg-on-surface/10 w-full mb-8"></div>
-<p class="font-body text-lg text-secondary max-w-4xl leading-relaxed">
+<div class="mb-8 md:mb-12">
+<h2 class="serif-display text-3xl sm:text-4xl md:text-7xl font-bold mb-4 md:mb-8">三大提名通道</h2>
+<div class="h-px bg-on-surface/10 w-full mb-4 md:mb-8"></div>
+<p class="font-body text-sm sm:text-base md:text-lg text-secondary max-w-4xl leading-relaxed">
                         今年，我们通过一个便捷的申请流程，为您提供了三种不同的荣誉通道。获奖者有可能入选全球十大华人“卓越成功华人”旗舰榜单、“企业影响力奖”以及“行业领袖”等分支榜单，各项评选均独立进行。
                     </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mt-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12 mt-8 md:mt-16">
 <!-- Industry Leaders -->
-<div class="text-center space-y-6">
-<div class="inline-block bg-primary text-white px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-4">全新榜单</div>
-<h4 class="serif-display text-3xl font-bold px-4">全球十大华人：行业领袖</h4>
-<p class="font-body text-sm text-secondary leading-relaxed px-6">
+<div class="bg-white md:bg-transparent p-5 sm:p-8 md:p-0 border border-outline-variant/15 md:border-0 shadow-sm md:shadow-none text-left md:text-center flex flex-col justify-between group">
+<div>
+<div class="inline-block bg-primary text-white px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-3 md:mb-4">全新榜单</div>
+<h4 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold md:px-4 mb-2 md:mb-4 text-on-surface group-hover:text-primary transition-colors">全球十大华人：行业领袖</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed md:px-6 mb-4 md:mb-0">
                             这系列涵盖 20 个垂直领域的榜单，旨在表彰 200 家致力于树立行业新标准、推动行业向新高度发展的先锋企业。
                         </p>
 </div>
+<div class="pt-2 md:pt-6">
+<a href="categories/industry-leaders.html" class="inline-flex items-center gap-1.5 text-primary text-xs font-bold tracking-wider uppercase group-hover:underline">
+    <span>了解通道详情</span>
+    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
 <!-- Flagship List -->
-<div class="text-center space-y-6">
-<div class="inline-block border border-on-surface/20 text-on-surface px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-4">旗舰主榜单</div>
-<h4 class="serif-display text-4xl font-black px-4">全球十大华人卓越成功企业家</h4>
-<p class="font-body text-sm text-secondary leading-relaxed px-6">
+<div class="bg-white md:bg-transparent p-5 sm:p-8 md:p-0 border border-outline-variant/15 md:border-0 shadow-sm md:shadow-none text-left md:text-center flex flex-col justify-between group">
+<div>
+<div class="inline-block border border-on-surface/20 text-on-surface px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-3 md:mb-4">旗舰主榜单</div>
+<h4 class="serif-display text-xl sm:text-2xl md:text-4xl font-black md:px-4 mb-2 md:mb-4 text-on-surface group-hover:text-primary transition-colors">全球十大华人卓越成功企业家</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed md:px-6 mb-4 md:mb-0">
                             主榜单将聚焦 100 家各行各业的杰出机构，表彰他们凭借其远见卓识、创新突破和深远影响力在全球范围内重塑商业与社会。
                         </p>
 </div>
+<div class="pt-2 md:pt-6">
+<a href="program.html" class="inline-flex items-center gap-1.5 text-primary text-xs font-bold tracking-wider uppercase group-hover:underline">
+    <span>申请主榜参选</span>
+    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
 <!-- Impact Awards -->
-<div class="text-center space-y-6">
-<div class="inline-block border border-on-surface/20 text-on-surface px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-4">特别荣誉</div>
-<h4 class="serif-display text-3xl font-bold px-4">全球十大华人企业社会影响力奖</h4>
-<p class="font-body text-sm text-secondary leading-relaxed px-6">
+<div class="bg-white md:bg-transparent p-5 sm:p-8 md:p-0 border border-outline-variant/15 md:border-0 shadow-sm md:shadow-none text-left md:text-center flex flex-col justify-between group">
+<div>
+<div class="inline-block border border-on-surface/20 text-on-surface px-3 py-1 text-[10px] font-bold tracking-widest uppercase mb-3 md:mb-4">特别荣誉</div>
+<h4 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold md:px-4 mb-2 md:mb-4 text-on-surface group-hover:text-primary transition-colors">全球十大华人企业社会影响力奖</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed md:px-6 mb-4 md:mb-0">
                             一项极具分量的独家荣誉，旨在表彰 5 家在决定应对全球紧迫挑战中发挥重要社会影响力的企业——其意义远超传统的商业盈利。
                         </p>
+</div>
+<div class="pt-2 md:pt-6">
+<a href="program.html#impact" class="inline-flex items-center gap-1.5 text-primary text-xs font-bold tracking-wider uppercase group-hover:underline">
+    <span>了解荣誉详情</span>
+    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
 </div>
 </div>
 </div>
 </section>
 <!-- 3. Benefits of Entering Section -->
-<section class="bg-white py-16 md:py-24 px-4 md:px-8 border-t border-outline-variant/10">
+<section class="bg-white py-12 md:py-24 px-4 md:px-8 border-t border-outline-variant/10">
 <div class="max-w-[1440px] mx-auto">
-<div class="mb-12">
-<h2 class="serif-display text-5xl md:text-7xl font-bold mb-8">参选优势</h2>
-<div class="h-px bg-on-surface/10 w-full mb-8"></div>
-<p class="font-body text-lg text-secondary max-w-4xl leading-relaxed">
+<div class="mb-8 md:mb-12">
+<h2 class="serif-display text-3xl sm:text-4xl md:text-7xl font-bold mb-4 md:mb-8">参选优势</h2>
+<div class="h-px bg-on-surface/10 w-full mb-4 md:mb-8"></div>
+<p class="font-body text-sm sm:text-base md:text-lg text-secondary max-w-4xl leading-relaxed">
                         入选全球十大华人企业名单，意味着您的机构将与全球最具远见和影响力的品牌并列——这将向您现有及未来的客户、优秀员工、战略合作伙伴和全球投资者明确展现您的非凡实力与行业地位。
                     </p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-<div class="bg-surface-container-low p-10 space-y-6">
-<h4 class="serif-display text-2xl font-bold leading-tight">确保获得专业评审</h4>
-<p class="font-body text-sm text-secondary leading-relaxed">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-16">
+<div class="bg-surface-container-low p-5 sm:p-8 md:p-10 space-y-3 sm:space-y-4 md:space-y-6">
+<h4 class="serif-display text-xl sm:text-2xl font-bold leading-tight">确保获得专业评审</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             每一份申请材料都将由我们的独立评审与编辑团队亲自审核，确保他们深度了解您的机构所做的突破性贡献及深远行业影响。
                         </p>
 </div>
-<div class="bg-surface-container-low p-10 space-y-6">
-<h4 class="serif-display text-2xl font-bold leading-tight">全球影响力的权威背书</h4>
-<p class="font-body text-sm text-secondary leading-relaxed">
+<div class="bg-surface-container-low p-5 sm:p-8 md:p-10 space-y-3 sm:space-y-4 md:space-y-6">
+<h4 class="serif-display text-xl sm:text-2xl font-bold leading-tight">全球影响力的权威背书</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             相关报道与访谈内容将通过印刷版杂志、各大官方网站、每日新闻简报和全球社交媒体矩阵，深度触达来自世界各地超过 1.2 亿的受众。
                         </p>
 </div>
-<div class="bg-surface-container-low p-10 space-y-6">
-<h4 class="serif-display text-2xl font-bold leading-tight">开创全新商业机遇</h4>
-<p class="font-body text-sm text-secondary leading-relaxed">
+<div class="bg-surface-container-low p-5 sm:p-8 md:p-10 space-y-3 sm:space-y-4 md:space-y-6">
+<h4 class="serif-display text-xl sm:text-2xl font-bold leading-tight">开创全新商业机遇</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             这不仅是一份荣誉，它更能大幅提升您品牌的品牌声量与行业公信力，帮助您更高效地吸引优质新客户，夯实企业间合作关系，并为您争取更多投资机会。
                         </p>
 </div>
-<div class="bg-surface-container-low p-10 space-y-6">
-<h4 class="serif-display text-2xl font-bold leading-tight">全年的媒体资源联动</h4>
-<p class="font-body text-sm text-secondary leading-relaxed">
+<div class="bg-surface-container-low p-5 sm:p-8 md:p-10 space-y-3 sm:space-y-4 md:space-y-6">
+<h4 class="serif-display text-xl sm:text-2xl font-bold leading-tight">全年的媒体资源联动</h4>
+<p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             跻身榜单的获奖企业将加入一个极具信赖的强力网络，成为我们在后续专题报道、专家访谈及闭门会议活动中的优先合作伙伴。
                         </p>
 </div>
@@ -575,15 +596,15 @@
 </div>
 </section>
 <!-- Enterprise Certification Module -->
-<section class="py-20 md:py-28 bg-surface-container-low border-y border-outline-variant/30 relative">
+<section class="py-12 md:py-28 bg-surface-container-low border-y border-outline-variant/30 relative">
     <div class="max-w-[1440px] mx-auto px-4 md:px-8">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-4 md:gap-6">
             <div class="max-w-3xl">
-                <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary block mb-3">Enterprise Certification · 企业认证</span>
-                <h2 class="serif-display text-3xl md:text-5xl font-black text-on-surface leading-tight">
+                <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary block mb-2 md:mb-3">Enterprise Certification · 企业认证</span>
+                <h2 class="serif-display text-2xl sm:text-3xl md:text-5xl font-black text-on-surface leading-tight">
                     全球华人卓越企业认证
                 </h2>
-                <p class="font-body text-base md:text-lg text-secondary leading-relaxed mt-4">
+                <p class="font-body text-sm sm:text-base md:text-lg text-secondary leading-relaxed mt-2 md:mt-4">
                     由全球十大华人推出，面向由华人创办、领导，或在全球华人市场具有代表性及影响力的优秀企业。
                 </p>
             </div>
@@ -594,91 +615,91 @@
         </div>
 
         <!-- 4 Focus Areas Bento/Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-8 md:mb-16">
             <!-- Focus 1: 企业实力 -->
-            <div class="bg-white p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+            <div class="bg-white p-4 sm:p-6 md:p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
                 <div>
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="sans-label text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">01 / PILLAR</span>
-                        <span class="material-symbols-outlined text-primary text-2xl">account_balance</span>
+                    <div class="flex items-center justify-between mb-3 sm:mb-6">
+                        <span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">01 / PILLAR</span>
+                        <span class="material-symbols-outlined text-primary text-xl sm:text-2xl">account_balance</span>
                     </div>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">企业实力</h3>
-                    <p class="font-body text-sm text-secondary leading-relaxed">
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-1.5 sm:mb-3">企业实力</h3>
+                    <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed line-clamp-3 sm:line-clamp-none">
                         考察企业在行业内的综合规模、资本稳健度、核心技术储备与全球市场抗风险能力。
                     </p>
                 </div>
-                <div class="mt-8 pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60">
+                <div class="mt-4 sm:mt-8 pt-2 sm:pt-4 border-t border-outline-variant/10 text-[9px] sm:text-xs font-mono text-secondary/60">
                     STRENGTH & CAPITAL
                 </div>
             </div>
 
             <!-- Focus 2: 品牌声誉 -->
-            <div class="bg-white p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+            <div class="bg-white p-4 sm:p-6 md:p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
                 <div>
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="sans-label text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">02 / PILLAR</span>
-                        <span class="material-symbols-outlined text-primary text-2xl">verified</span>
+                    <div class="flex items-center justify-between mb-3 sm:mb-6">
+                        <span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">02 / PILLAR</span>
+                        <span class="material-symbols-outlined text-primary text-xl sm:text-2xl">verified</span>
                     </div>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">品牌声誉</h3>
-                    <p class="font-body text-sm text-secondary leading-relaxed">
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-1.5 sm:mb-3">品牌声誉</h3>
+                    <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed line-clamp-3 sm:line-clamp-none">
                         关注企业的公众认知、市场美誉度、客户信赖指数及在华人商业网络中的品牌公信力。
                     </p>
                 </div>
-                <div class="mt-8 pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60">
+                <div class="mt-4 sm:mt-8 pt-2 sm:pt-4 border-t border-outline-variant/10 text-[9px] sm:text-xs font-mono text-secondary/60">
                     REPUTATION & TRUST
                 </div>
             </div>
 
             <!-- Focus 3: 行业贡献 -->
-            <div class="bg-white p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+            <div class="bg-white p-4 sm:p-6 md:p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
                 <div>
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="sans-label text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">03 / PILLAR</span>
-                        <span class="material-symbols-outlined text-primary text-2xl">trending_up</span>
+                    <div class="flex items-center justify-between mb-3 sm:mb-6">
+                        <span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">03 / PILLAR</span>
+                        <span class="material-symbols-outlined text-primary text-xl sm:text-2xl">trending_up</span>
                     </div>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">行业贡献</h3>
-                    <p class="font-body text-sm text-secondary leading-relaxed">
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-1.5 sm:mb-3">行业贡献</h3>
+                    <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed line-clamp-3 sm:line-clamp-none">
                         衡量对实体产业链的带动效能、产业生态协同价值以及在关键技术与模式变革中的引领作用。
                     </p>
                 </div>
-                <div class="mt-8 pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60">
+                <div class="mt-4 sm:mt-8 pt-2 sm:pt-4 border-t border-outline-variant/10 text-[9px] sm:text-xs font-mono text-secondary/60">
                     INDUSTRY IMPACT
                 </div>
             </div>
 
             <!-- Focus 4: 诚信记录 -->
-            <div class="bg-white p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
+            <div class="bg-white p-4 sm:p-6 md:p-8 border border-outline-variant/20 flex flex-col justify-between group hover:border-primary transition-all duration-300">
                 <div>
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="sans-label text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">04 / PILLAR</span>
-                        <span class="material-symbols-outlined text-primary text-2xl">gavel</span>
+                    <div class="flex items-center justify-between mb-3 sm:mb-6">
+                        <span class="sans-label text-[10px] sm:text-xs tracking-[0.2em] font-bold text-secondary group-hover:text-primary transition-colors">04 / PILLAR</span>
+                        <span class="material-symbols-outlined text-primary text-xl sm:text-2xl">gavel</span>
                     </div>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">诚信记录</h3>
-                    <p class="font-body text-sm text-secondary leading-relaxed">
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-1.5 sm:mb-3">诚信记录</h3>
+                    <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed line-clamp-3 sm:line-clamp-none">
                         评估企业法定合规运营、商业合同履约率、商业伦理自律机制以及社会责任担当。
                     </p>
                 </div>
-                <div class="mt-8 pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60">
+                <div class="mt-4 sm:mt-8 pt-2 sm:pt-4 border-t border-outline-variant/10 text-[9px] sm:text-xs font-mono text-secondary/60">
                     INTEGRITY & GOVERNANCE
                 </div>
             </div>
         </div>
 
         <!-- Action CTAs -->
-        <div class="bg-white p-8 md:p-12 border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-                <h4 class="serif-display text-xl md:text-2xl font-bold text-on-surface mb-2">
+        <div class="bg-white p-6 sm:p-8 md:p-12 border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+            <div class="text-center md:text-left">
+                <h4 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-1.5 md:mb-2">
                     构建全球华人企业信任网络，提升跨区域商业公信力
                 </h4>
-                <p class="font-body text-sm text-secondary">
+                <p class="font-body text-xs sm:text-sm text-secondary">
                     通过多维度综合评测，全面彰显华人优秀企业的市场地位与商业典范价值。
                 </p>
             </div>
-            <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto shrink-0">
-                <a href="enterprise-certification.html" class="border-2 border-on-surface text-on-surface px-8 py-4 serif-display uppercase tracking-widest text-xs font-bold hover:bg-on-surface hover:text-surface transition-colors duration-300 text-center">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full md:w-auto shrink-0">
+                <a href="enterprise-certification.html" class="border-2 border-on-surface text-on-surface px-6 sm:px-8 py-3.5 sm:py-4 serif-display uppercase tracking-widest text-xs font-bold hover:bg-on-surface hover:text-surface transition-colors duration-300 text-center min-h-[44px] flex items-center justify-center">
                     了解企业认证
                 </a>
-                <a href="enterprise-certification.html#process" class="bg-primary text-on-primary px-8 py-4 serif-display uppercase tracking-widest text-xs font-bold hover:bg-primary-container transition-colors duration-300 text-center shadow-lg shadow-primary/20">
+                <a href="enterprise-certification.html#process" class="bg-primary text-on-primary px-6 sm:px-8 py-3.5 sm:py-4 serif-display uppercase tracking-widest text-xs font-bold hover:bg-primary-container transition-colors duration-300 text-center shadow-lg shadow-primary/20 min-h-[44px] flex items-center justify-center">
                     申请企业认证
                 </a>
             </div>
@@ -686,51 +707,51 @@
     </div>
 </section>
 <!-- Featured Editorial Grid -->
-<section class="bg-background py-16 md:py-32 px-4 md:px-8 border-t border-outline-variant/20 border-b border-outline-variant/10">
+<section class="bg-background py-12 md:py-32 px-4 md:px-8 border-t border-outline-variant/20 border-b border-outline-variant/10">
     <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
         <!-- Main Story (2/3) -->
         <article id="homepage-cover-story" class="lg:col-span-8 group cursor-pointer" onclick="location.href='insights/hkex-tech-ipo-revival-chapter-18c.html'">
-            <div class="aspect-[16/9] overflow-hidden bg-surface-container-high mb-10 relative">
+            <div class="aspect-[16/9] overflow-hidden bg-surface-container-high mb-6 md:mb-10 relative">
                 <img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="assets/images/insights/hkex-tech-ipo-revival-chapter-18c.webp" alt="港交所科技上市潮全面复苏：8个月募资破3400亿与18C特专科技红利" loading="lazy">
-                <div class="absolute top-0 left-0 bg-primary text-on-primary px-4 py-2 sans-label text-[0.65rem] font-bold tracking-[0.3em] uppercase">
+                <div class="absolute top-0 left-0 bg-primary text-on-primary px-3 sm:px-4 py-1.5 sm:py-2 sans-label text-[0.65rem] font-bold tracking-[0.3em] uppercase">
                     封面故事 COVER STORY
                 </div>
             </div>
-            <h1 class="serif-display text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors duration-300">
+            <h1 class="serif-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-4 md:mb-6 group-hover:text-primary transition-colors duration-300">
                 港交所科技上市潮全面复苏：8个月募资破3400亿与18C特专科技红利
             </h1>
-            <p class="font-body text-xl md:text-2xl text-secondary leading-relaxed max-w-3xl">
+            <p class="font-body text-base sm:text-lg md:text-2xl text-secondary leading-relaxed max-w-3xl">
                 深度解析前8个月港股IPO激增153%背后的硬科技支撑，特专科技制度放宽延期与中东中资双向资金汇流新生态。
             </p>
         </article>
         
         <!-- Latest Insights Sidebar (1/3) -->
-        <aside class="lg:col-span-4 flex flex-col pt-2 lg:pl-4">
-            <div class="mb-10">
-                <h4 class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4">最新深度洞察 LATEST INSIGHTS</h4>
+        <aside class="lg:col-span-4 flex flex-col pt-2 lg:pl-4 mt-6 lg:mt-0">
+            <div class="mb-6 md:mb-10">
+                <h4 class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 md:mb-4">最新深度洞察 LATEST INSIGHTS</h4>
                 <div class="w-full h-px bg-on-surface/10"></div>
             </div>
             
-            <div id="homepage-latest-sidebar" class="flex flex-col gap-8 lg:gap-12">
+            <div id="homepage-latest-sidebar" class="flex flex-col gap-6 md:gap-8 lg:gap-12">
                 <article class="group cursor-pointer" onclick="location.href='insights/cseac-2026-china-semiconductor-equipment.html'">
-                    <p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-4 uppercase">2026.09.04 • 16 MIN READ</p>
-                    <h2 class="serif-display text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300 mb-8">
+                    <p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-2 md:mb-4 uppercase">2026.09.04 • 16 MIN READ</p>
+                    <h2 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300 mb-4 md:mb-8">
                         无锡CSEAC 2026半导体装备展：核心工具突破与千亿芯片出口倍增密码
                     </h2>
                     <div class="w-full h-px bg-on-surface/5"></div>
                 </article>
                 
                 <article class="group cursor-pointer" onclick="location.href='insights/chinese-biotech-adc-global-licensing.html'">
-                    <p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-4 uppercase">2026.08.31 • 15 MIN READ</p>
-                    <h2 class="serif-display text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300 mb-8">
+                    <p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-2 md:mb-4 uppercase">2026.08.31 • 15 MIN READ</p>
+                    <h2 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300 mb-4 md:mb-8">
                         中国创新药出海黄金时代：双抗ADC重磅授权与跨国药企研发逻辑重置
                     </h2>
                     <div class="w-full h-px bg-on-surface/5"></div>
                 </article>
                 
                 <article class="group cursor-pointer" onclick="location.href='insights/malaysia-data-center-boom-energy-grid.html'">
-                    <p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-4 uppercase">2026.08.20 • 15 MIN READ</p>
-                    <h2 class="serif-display text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300">
+                    <p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-2 md:mb-4 uppercase">2026.08.20 • 15 MIN READ</p>
+                    <h2 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300">
                         马来西亚AI数据中心热潮与电网承载边界：柔佛算力走廊的能源硬约束
                     </h2>
                 </article>
@@ -756,16 +777,16 @@
     if (coverEl && cover) {
         coverEl.setAttribute('onclick', "location.href='" + cover.url + "'");
         coverEl.innerHTML = 
-            '<div class="aspect-[16/9] overflow-hidden bg-surface-container-high mb-10 relative">' +
+            '<div class="aspect-[16/9] overflow-hidden bg-surface-container-high mb-6 md:mb-10 relative">' +
                 '<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" src="' + cover.image + '" alt="' + (cover.imageAlt || cover.title) + '" loading="lazy">' +
-                '<div class="absolute top-0 left-0 bg-primary text-on-primary px-4 py-2 sans-label text-[0.65rem] font-bold tracking-[0.3em] uppercase">' +
+                '<div class="absolute top-0 left-0 bg-primary text-on-primary px-3 sm:px-4 py-1.5 sm:py-2 sans-label text-[0.65rem] font-bold tracking-[0.3em] uppercase">' +
                     '封面故事 COVER STORY' +
                 '</div>' +
             '</div>' +
-            '<h1 class="serif-display text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors duration-300">' +
+            '<h1 class="serif-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-4 md:mb-6 group-hover:text-primary transition-colors duration-300">' +
                 cover.title +
             '</h1>' +
-            '<p class="font-body text-xl md:text-2xl text-secondary leading-relaxed max-w-3xl">' +
+            '<p class="font-body text-base sm:text-lg md:text-2xl text-secondary leading-relaxed max-w-3xl">' +
                 cover.subtitle +
             '</p>';
     }
@@ -777,8 +798,8 @@
             var isLast = (idx === sidebarItems.length - 1);
             var dateStr = item.publicationDate ? item.publicationDate.replace(/-/g, '.') : '';
             return '<article class="group cursor-pointer" onclick="location.href=\'' + item.url + '\'">' +
-                '<p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-4 uppercase">' + dateStr + ' • ' + item.readingTime + '</p>' +
-                '<h2 class="serif-display text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300 ' + (isLast ? '' : 'mb-8') + '">' +
+                '<p class="font-mono text-[0.65rem] tracking-widest text-secondary mb-2 md:mb-4 uppercase">' + dateStr + ' • ' + item.readingTime + '</p>' +
+                '<h2 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold leading-snug group-hover:text-primary transition-colors duration-300 ' + (isLast ? '' : 'mb-4 md:mb-8') + '">' +
                     item.title +
                 '</h2>' +
                 (isLast ? '' : '<div class="w-full h-px bg-on-surface/5"></div>') +
@@ -807,14 +828,14 @@
 })();
 </script>
 <!-- Dynamic Content CTA -->
-<section class="relative bg-on-surface py-40 overflow-hidden">
+<section class="relative bg-on-surface py-16 sm:py-24 md:py-40 overflow-hidden">
 
-<div class="relative z-10 max-w-4xl mx-auto text-center px-8">
-<h3 class="serif-display text-5xl md:text-7xl font-bold text-surface mb-8 leading-tight">加入<span class="italic text-primary">最卓越成功华人</span>的领袖矩阵。</h3>
-<p class="font-body text-surface/80 text-lg mb-12 max-w-xl mx-auto">立刻为您的机构/企业申请下一年度全球十大华人卓越成功企业家的候选资格。</p>
-<div class="flex flex-col md:flex-row gap-4 justify-center">
-<input class="bg-surface/10 border-b border-surface/30 px-6 py-4 text-surface focus:outline-none focus:border-primary transition-colors min-w-[320px]" placeholder="您的电子邮箱" type="email"/>
-<button class="bg-primary text-on-primary px-6 md:px-12 py-4 font-bold uppercase tracking-[0.2em] hover:bg-primary-container transition-colors">
+<div class="relative z-10 max-w-4xl mx-auto text-center px-4 md:px-8">
+<h3 class="serif-display text-2xl sm:text-4xl md:text-7xl font-bold text-surface mb-4 md:mb-8 leading-tight">加入<span class="italic text-primary">最卓越成功华人</span>的领袖矩阵。</h3>
+<p class="font-body text-surface/80 text-sm sm:text-base md:text-lg mb-8 md:mb-12 max-w-xl mx-auto">立刻为您的机构/企业申请下一年度全球十大华人卓越成功企业家的候选资格。</p>
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center max-w-lg mx-auto">
+<input class="w-full sm:w-auto flex-grow bg-surface/10 border border-surface/20 sm:border-0 sm:border-b sm:border-surface/30 px-4 sm:px-6 py-3.5 sm:py-4 text-surface placeholder-surface/50 focus:outline-none focus:border-primary transition-colors text-sm" placeholder="您的电子邮箱" type="email"/>
+<button class="w-full sm:w-auto bg-primary text-on-primary px-6 md:px-12 py-3.5 sm:py-4 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm hover:bg-primary-container transition-colors min-h-[44px] flex items-center justify-center">
                         提交提名
                     </button>
 </div>
@@ -822,57 +843,48 @@
 </section>
 </main>
 
-
-
-
-
-
-
-
-
-
 <!-- FAQ Section -->
-<section class="py-16 md:py-24 px-4 md:px-8 bg-background border-t border-outline-variant/10">
+<section class="py-12 md:py-24 px-4 md:px-8 bg-background border-t border-outline-variant/10">
     <div class="max-w-[1440px] mx-auto">
-        <div class="mb-12">
-            <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 block">常见问题 · FAQ</span>
-            <h2 class="serif-display text-3xl md:text-4xl font-bold text-on-surface">关于全球十大华人</h2>
+        <div class="mb-8 md:mb-12">
+            <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-2 md:mb-3 block">常见问题 · FAQ</span>
+            <h2 class="serif-display text-2xl sm:text-3xl md:text-4xl font-bold text-on-surface">关于全球十大华人</h2>
         </div>
         <div class="space-y-3 max-w-3xl">
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-index w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqIndex(this)">
+                <button class="faq-btn-index w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors min-h-[48px]" onclick="toggleFaqIndex(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">全球十大华人是什么？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
-                <div class="faq-answer-index px-6 pb-5 hidden bg-surface-container-low">
-                    <p class="sans-label text-sm md:text-base text-secondary leading-relaxed">全球十大华人是由国际华人基金会（Yayasan Keturunan Cina Antarabangsa）发起并提供长期学术与合规支持的全球性商业领袖研究平台。基金会自 2016 年法定成立以来（注册号：PPM-029-10-29042016），致力于追踪包括东南亚华人企业家、华人科技巨头在内的全球华人资本走向与商业版图，是深具公信力的华人杰出领袖追踪与研究机构。</p>
+                <div class="faq-answer-index px-4 sm:px-6 pb-4 sm:pb-5 hidden bg-surface-container-low">
+                    <p class="sans-label text-xs sm:text-sm md:text-base text-secondary leading-relaxed">全球十大华人是由国际华人基金会（Yayasan Keturunan Cina Antarabangsa）发起并提供长期学术与合规支持的全球性商业领袖研究平台。基金会自 2016 年法定成立以来（注册号：PPM-029-10-29042016），致力于追踪包括东南亚华人企业家、华人科技巨头在内的全球华人资本走向与商业版图，是深具公信力的华人杰出领袖追踪与研究机构。</p>
                 </div>
             </div>
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-index w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqIndex(this)">
+                <button class="faq-btn-index w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors min-h-[48px]" onclick="toggleFaqIndex(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">全球十大华人评选涵盖哪些类别？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
-                <div class="faq-answer-index px-6 pb-5 hidden bg-surface-container-low">
-                    <p class="sans-label text-sm md:text-base text-secondary leading-relaxed">评选设有五大核心类别：行业领袖（Industry Leaders）、破局者（Disruptors）、创新先锋（Innovators）、商业巨头（Titans）与开拓者（Pioneers），全面覆盖科技创新、金融资本、实业制造、可持续发展与社会影响力等不同领域。</p>
+                <div class="faq-answer-index px-4 sm:px-6 pb-4 sm:pb-5 hidden bg-surface-container-low">
+                    <p class="sans-label text-xs sm:text-sm md:text-base text-secondary leading-relaxed">评选设有五大核心类别：行业领袖（Industry Leaders）、破局者（Disruptors）、创新先锋（Innovators）、商业巨头（Titans）与开拓者（Pioneers），全面覆盖科技创新、金融资本、实业制造、可持续发展与社会影响力等不同领域。</p>
                 </div>
             </div>
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-index w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqIndex(this)">
+                <button class="faq-btn-index w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors min-h-[48px]" onclick="toggleFaqIndex(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">如何参与或提名候选人参加全球十大华人评选？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
-                <div class="faq-answer-index px-6 pb-5 hidden bg-surface-container-low">
-                    <p class="sans-label text-sm md:text-base text-secondary leading-relaxed">提名可通过官方网站的评选盛典页面提交，候选人需满足基本资格条件（包括商业影响力、创新贡献与全球视野三大维度），经初步审核后方可进入正式评选流程。</p>
+                <div class="faq-answer-index px-4 sm:px-6 pb-4 sm:pb-5 hidden bg-surface-container-low">
+                    <p class="sans-label text-xs sm:text-sm md:text-base text-secondary leading-relaxed">提名可通过官方网站的评选盛典页面提交，候选人需满足基本资格条件（包括商业影响力、创新贡献与全球视野三大维度），经初步审核后方可进入正式评选流程。</p>
                 </div>
             </div>
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-index w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqIndex(this)">
+                <button class="faq-btn-index w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors min-h-[48px]" onclick="toggleFaqIndex(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">全球十大华人评选的权威性体现在哪里？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
-                <div class="faq-answer-index px-6 pb-5 hidden bg-surface-container-low">
-                    <p class="sans-label text-sm md:text-base text-secondary leading-relaxed">评选由独立评审委员会负责，评审标准严格遵循多维度客观指标，评选过程透明公正。平台长期追踪全球华人商业生态动态，为全球投资者、企业家与决策者提供权威参考。</p>
+                <div class="faq-answer-index px-4 sm:px-6 pb-4 sm:pb-5 hidden bg-surface-container-low">
+                    <p class="sans-label text-xs sm:text-sm md:text-base text-secondary leading-relaxed">评选由独立评审委员会负责，评审标准严格遵循多维度客观指标，评选过程透明公正。平台长期追踪全球华人商业生态动态，为全球投资者、企业家与决策者提供权威参考。</p>
                 </div>
             </div>
         </div>
@@ -896,7 +908,7 @@ function toggleFaqIndex(btn) {
         <!-- Column 1: Brand (4 cols) -->
         <div class="lg:col-span-4 flex flex-col">
             <div class="mb-6">
-                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain drop-shadow-xl" loading="lazy" />
+                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-12 w-auto object-contain drop-shadow-xl" loading="lazy" />
             </div>
             <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
                 连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。

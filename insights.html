@@ -142,6 +142,24 @@
         .article-card {
             transition: opacity 0.4s ease-out, transform 0.4s ease-out;
         }
+        @media (max-width: 767px) {
+            .article-card .aspect-\[16\/10\] {
+                margin-bottom: 1rem !important;
+            }
+            .article-card h3 {
+                font-size: 1.2rem !important;
+                line-height: 1.4 !important;
+                margin-bottom: 0.75rem !important;
+            }
+            .article-card p {
+                font-size: 0.875rem !important;
+                line-height: 1.625 !important;
+                margin-bottom: 1.25rem !important;
+            }
+            .article-card .border-t {
+                padding-top: 1rem !important;
+            }
+        }
     </style>
     <link rel="icon" type="image/png" href="assets/images/Top 10 chinese logo.png"/>
 
@@ -201,7 +219,7 @@ window.addEventListener('scroll', () => {
 <nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
     <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
         <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
-            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain md:drop-shadow-xl" />
+            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-14 w-auto object-contain md:drop-shadow-xl" />
         </a>
         
         <div class="hidden md:flex gap-4 lg:gap-8 items-center">
@@ -225,11 +243,8 @@ window.addEventListener('scroll', () => {
             </div>
         </div>
         
-        <div class="flex items-center gap-3 md:gap-4 z-50 relative">
-            <button class="bg-primary text-on-primary px-4 md:px-6 py-2 serif-display uppercase tracking-widest text-[0.65rem] md:text-[0.75rem] font-bold active:scale-95 transition-transform whitespace-nowrap shadow-lg shadow-primary/20">
-                订阅最新资讯
-            </button>
-            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-1 focus:outline-none">
+        <div class="flex items-center z-50 relative">
+            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] min-h-[44px] min-w-[44px] p-2 -mr-2 flex items-center justify-center focus:outline-none" aria-label="打开导航菜单">
                 <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
             </button>
         </div>
@@ -299,13 +314,13 @@ window.addEventListener('scroll', () => {
 
 <main class="min-h-screen">
     <!-- Featured Hero Section -->
-    <section class="pt-32 pb-16 px-4 md:px-12 max-w-[1920px] mx-auto min-h-[70vh] flex flex-col justify-center border-b border-black/10 bg-[#faf9f6]">
+    <section class="pt-24 pb-12 md:pt-32 md:pb-16 px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto min-h-0 md:min-h-[70vh] flex flex-col justify-center border-b border-black/10 bg-[#faf9f6]">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 lg:gap-24 items-center">
             <div>
-                <span class="sans-label text-primary tracking-[0.2em] font-bold text-xs md:text-sm uppercase mb-6 block border-l-2 border-primary pl-4">聚焦研究 (Featured Insight)</span>
-                <h1 class="serif-display text-5xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8 text-[#1b1c1a]">重新定义全球 SEO：<br/><span class="italic text-secondary font-light">从流量的‘竞逐者’，进化为屏幕的‘统治者’</span></h1>
-                <p class="text-secondary text-lg md:text-xl leading-relaxed mb-10 max-w-xl font-light">Prism Media 如何利用‘Google 屏幕占领’策略，为华人企业在全球竞争中构建不可逾越的信任壁垒。</p>
-                <a href="insight-brandthirty.html" class="inline-block bg-[#1b1c1a] border border-black/10 hover:border-[#bb0002] hover:bg-[#bb0002] text-white px-4 md:px-8 py-5 sans-label text-xs tracking-widest uppercase transition-all duration-500 font-bold shadow-sm">阅读深度报告 (Read Report)</a>
+                <span class="sans-label text-primary tracking-[0.2em] font-bold text-xs md:text-sm uppercase mb-4 md:mb-6 block border-l-2 border-primary pl-4">聚焦研究 (Featured Insight)</span>
+                <h1 class="serif-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-snug md:leading-tight mb-4 md:mb-8 text-[#1b1c1a]">重新定义全球 SEO：<br class="hidden sm:inline"/><span class="italic text-secondary font-light text-xl sm:text-2xl md:text-4xl lg:text-5xl">从流量的‘竞逐者’，进化为屏幕的‘统治者’</span></h1>
+                <p class="text-secondary text-sm sm:text-base md:text-xl leading-relaxed mb-6 md:mb-10 max-w-xl font-light">Prism Media 如何利用‘Google 屏幕占领’策略，为华人企业在全球竞争中构建不可逾越的信任壁垒。</p>
+                <a href="insight-brandthirty.html" class="inline-block w-full sm:w-auto text-center bg-[#1b1c1a] border border-black/10 hover:border-[#bb0002] hover:bg-[#bb0002] text-white px-6 md:px-8 py-4 md:py-5 sans-label text-xs tracking-widest uppercase transition-all duration-500 font-bold shadow-sm active:scale-95">阅读深度报告 (Read Report)</a>
             </div>
             <div class="aspect-[4/3] bg-neutral-100 border border-black/10 overflow-hidden group">
                 <img src="assets/images/prism_media.jpg" alt="Prism Media Global Headquarters" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 origin-bottom" loading="lazy"/>
@@ -314,38 +329,38 @@ window.addEventListener('scroll', () => {
     </section>
 
     <!-- Sticky Taxonomy Filter UI -->
-    <div class="border-b border-white/5 bg-black/95 backdrop-blur-md sticky top-[72px] md:top-[88px] z-30 shadow-md">
-        <div class="max-w-[1920px] mx-auto px-6 md:px-24 hide-scrollbar">
+    <div class="border-b border-white/5 bg-black/95 backdrop-blur-md sticky top-[64px] md:top-[88px] z-30 shadow-md">
+        <div class="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-24 hide-scrollbar">
             <!-- Main Taxonomy -->
-            <div class="flex items-center gap-10 overflow-x-auto py-5 border-b border-white/5 select-none" id="main-filters">
-                <button class="sans-label text-[14px] text-gold font-bold uppercase whitespace-nowrap border-b border-gold pb-1 transition-all" data-filter="all">全部 (All)</button>
-                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="industry">行业深度 (Industry)</button>
-                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="region">地区局势 (Region)</button>
-                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="capital">资本流向 (Capital Flow)</button>
-                <button class="sans-label text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="technology">技术赋能 (Technology)</button>
+            <div class="flex items-center gap-6 md:gap-10 overflow-x-auto py-3.5 md:py-5 border-b border-white/5 select-none hide-scrollbar" id="main-filters">
+                <button class="sans-label text-xs sm:text-[14px] text-gold font-bold uppercase whitespace-nowrap border-b border-gold pb-1 transition-all" data-filter="all">全部 (All)</button>
+                <button class="sans-label text-xs sm:text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="industry">行业深度 (Industry)</button>
+                <button class="sans-label text-xs sm:text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="region">地区局势 (Region)</button>
+                <button class="sans-label text-xs sm:text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="capital">资本流向 (Capital Flow)</button>
+                <button class="sans-label text-xs sm:text-[14px] text-[#faf9f6]/70 hover:text-[#faf9f6] pb-1 transition-all uppercase whitespace-nowrap border-b border-transparent" data-filter="technology">技术赋能 (Technology)</button>
             </div>
             <!-- Region Sub-filters -->
-            <div class="items-center gap-6 md:gap-8 overflow-x-auto py-4 select-none transition-all duration-300" id="region-sub-filters-container" style="display: none; opacity: 0; transform: translateY(-10px);">
-                <span class="sans-label text-xs text-white/80 uppercase tracking-[0.2em] whitespace-nowrap">地区细分 (Regions):</span>
-                <button class="sans-label text-xs text-gold font-bold uppercase transition-colors whitespace-nowrap" data-region-filter="all">全部地区 (All)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="asean">东盟 (ASEAN)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="china">中国 (China)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="hongkong">香港 (Hong Kong)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="macau">澳门 (Macau)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="japan">日本 (Japan)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="korea">韩国 (Korea)</button>
-                <button class="sans-label text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="us">美国 (US)</button>
+            <div class="items-center gap-4 sm:gap-6 md:gap-8 overflow-x-auto py-3 md:py-4 select-none transition-all duration-300 hide-scrollbar" id="region-sub-filters-container" style="display: none; opacity: 0; transform: translateY(-10px);">
+                <span class="sans-label text-[11px] sm:text-xs text-white/80 uppercase tracking-[0.2em] whitespace-nowrap">地区细分 (Regions):</span>
+                <button class="sans-label text-[11px] sm:text-xs text-gold font-bold uppercase transition-colors whitespace-nowrap" data-region-filter="all">全部地区 (All)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="asean">东盟 (ASEAN)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="china">中国 (China)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="hongkong">香港 (Hong Kong)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="macau">澳门 (Macau)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="japan">日本 (Japan)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="korea">韩国 (Korea)</button>
+                <button class="sans-label text-[11px] sm:text-xs text-[#faf9f6]/70 hover:text-[#faf9f6] uppercase transition-colors whitespace-nowrap" data-region-filter="us">美国 (US)</button>
             </div>
         </div>
     </div>
 
     <!-- AEO Quick Answer Block -->
-    <div class="w-full border-y py-8 px-6 md:px-24" style="background-color:#1a1a1a;border-color:rgba(197,160,89,0.2)">
-        <div class="max-w-[1920px] mx-auto flex items-start gap-5">
+    <div class="w-full border-y py-6 md:py-8 px-4 sm:px-6 md:px-24" style="background-color:#1a1a1a;border-color:rgba(197,160,89,0.2)">
+        <div class="max-w-[1920px] mx-auto flex items-start gap-4 sm:gap-5">
             <span class="material-symbols-outlined text-xl mt-0.5 flex-shrink-0" style="color:#c5a059">info</span>
             <div>
-                <p class="sans-label text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style="color:#c5a059">快速解答 · Quick Answer</p>
-                <p class="sans-label text-sm md:text-base leading-relaxed font-light" style="color:rgba(250,249,246,0.80)">全球十大华人深度洞察栏目聚焦全球华人商业精英的战略动向，涵盖资本流向、科技赋能、地区局势与行业深度四大核心议题，为华人商业决策者提供权威的市场分析与趋势研判。</p>
+                <p class="sans-label text-[10px] tracking-[0.3em] uppercase font-bold mb-1.5 sm:mb-2" style="color:#c5a059">快速解答 · Quick Answer</p>
+                <p class="sans-label text-xs sm:text-sm md:text-base leading-relaxed font-light" style="color:rgba(250,249,246,0.80)">全球十大华人深度洞察栏目聚焦全球华人商业精英的战略动向，涵盖资本流向、科技赋能、地区局势与行业深度四大核心议题，为华人商业决策者提供权威的市场分析与趋势研判。</p>
             </div>
         </div>
     </div>
@@ -364,12 +379,12 @@ window.addEventListener('scroll', () => {
     </section>
 
     <!-- Intelligence Grid -->
-    <section class="max-w-[1920px] mx-auto px-6 md:px-24 py-16 bg-white">
-        <div class="mb-10 flex justify-between items-center border-b border-black/10 pb-4">
-            <p id="counter-label" class="sans-label text-sm text-secondary uppercase tracking-widest font-bold">已为您显示 38 篇深度洞察（共 38 篇）</p>
+    <section class="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-24 py-10 md:py-16 bg-white">
+        <div class="mb-6 md:mb-10 flex justify-between items-center border-b border-black/10 pb-4">
+            <p id="counter-label" class="sans-label text-xs sm:text-sm text-secondary uppercase tracking-widest font-bold">已为您显示 38 篇深度洞察（共 38 篇）</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 lg:gap-16 transition-all duration-500" id="insights-grid">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 lg:gap-16 transition-all duration-500" id="insights-grid">
             
             <!-- Card 1: Prism Media -->
             <article class="article-card group relative cursor-pointer flex flex-col h-full" data-category="technology capital" data-region="">
@@ -1163,7 +1178,7 @@ function toggleFaqIns(btn) {
         <!-- Column 1: Brand (4 cols) -->
         <div class="lg:col-span-4 flex flex-col">
             <div class="mb-6">
-                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain drop-shadow-xl" loading="lazy" />
+                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-12 w-auto object-contain drop-shadow-xl" loading="lazy" />
             </div>
             <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
                 连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。

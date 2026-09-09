@@ -248,7 +248,7 @@
 <nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
     <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
         <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
-            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain md:drop-shadow-xl" />
+            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-14 w-auto object-contain md:drop-shadow-xl" />
         </a>
         
         <div class="hidden md:flex gap-4 lg:gap-8 items-center">
@@ -272,11 +272,8 @@
             </div>
         </div>
         
-        <div class="flex items-center gap-3 md:gap-4 z-50 relative">
-            <button class="bg-primary text-on-primary px-4 md:px-6 py-2 serif-display uppercase tracking-widest text-[0.65rem] md:text-[0.75rem] font-bold active:scale-95 transition-transform whitespace-nowrap shadow-lg shadow-primary/20">
-                订阅最新资讯
-            </button>
-            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-1 focus:outline-none">
+        <div class="flex items-center z-50 relative">
+            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] min-h-[44px] min-w-[44px] p-2 -mr-2 flex items-center justify-center focus:outline-none" aria-label="打开导航菜单">
                 <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
             </button>
         </div>
@@ -300,279 +297,279 @@
     <a class="nav-link serif-display uppercase tracking-widest text-lg font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="faq.html">常见问题</a>
 </div>
 
-<main class="pt-32 pb-24 px-4 md:px-8 max-w-[1440px] mx-auto flex-grow w-full">
+<main class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 md:px-8 max-w-[1440px] mx-auto flex-grow w-full">
     <!-- Hero Section -->
-    <header class="mb-16 flex flex-col md:flex-row items-end justify-between gap-8 lg:gap-12">
+    <header class="mb-10 md:mb-16 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-8 lg:gap-12">
         <div class="max-w-3xl">
-            <span class="sans-label text-[0.75rem] uppercase tracking-[0.3em] text-primary font-bold mb-4 block">影响力传承</span>
-            <h1 class="serif-display text-5xl lg:text-8xl leading-none font-black tracking-tighter">2026年度全球<br/>十大华人企业家排行榜</h1>
+            <span class="sans-label text-[0.75rem] uppercase tracking-[0.3em] text-primary font-bold mb-3 md:mb-4 block">影响力传承</span>
+            <h1 class="serif-display text-3xl sm:text-4xl md:text-5xl lg:text-8xl leading-tight md:leading-none font-black tracking-tighter">2026年度全球<br class="hidden sm:inline"/>十大华人企业家排行榜</h1>
         </div>
-        <div class="md:max-w-xs text-right">
-            <p class="body-lg text-secondary leading-relaxed">
+        <div class="md:max-w-xs text-left md:text-right">
+            <p class="body-lg text-secondary leading-relaxed text-sm md:text-base">
                 一份权威且详尽的数字档案，见证了那些重新定义全球商业生态系统与技术创新格局的传奇领袖与杰出组织。
             </p>
         </div>
     </header>
 
     <!-- Sticky Year Filter Bar -->
-    <nav class="sticky top-20 z-30 w-full bg-background/90 backdrop-blur-md border-b border-outline-variant/10 mb-16 py-4">
-        <div class="flex flex-wrap gap-4 md:gap-6 justify-center items-center">
-            <button class="filter-tab px-6 py-2 sans-label text-sm uppercase tracking-widest font-bold border-b-2 border-primary text-primary transition-all duration-300 active:scale-95" data-filter="all">全部</button>
-            <button class="filter-tab px-6 py-2 sans-label text-sm uppercase tracking-widest font-bold border-b-2 border-transparent text-secondary hover:text-on-background transition-all duration-300 active:scale-95" data-filter="2025">2025</button>
-            <button class="filter-tab px-6 py-2 sans-label text-sm uppercase tracking-widest font-bold border-b-2 border-transparent text-secondary hover:text-on-background transition-all duration-300 active:scale-95" data-filter="2024">2024</button>
-            <button class="filter-tab px-6 py-2 sans-label text-sm uppercase tracking-widest font-bold border-b-2 border-transparent text-secondary hover:text-on-background transition-all duration-300 active:scale-95" data-filter="archive">2023 及以前</button>
+    <nav class="sticky top-16 md:top-20 z-30 w-full bg-background/90 backdrop-blur-md border-b border-outline-variant/10 mb-8 md:mb-16 py-3 md:py-4">
+        <div class="flex flex-wrap gap-2 sm:gap-4 md:gap-6 justify-center items-center">
+            <button class="filter-tab px-3 sm:px-6 py-2 sans-label text-xs sm:text-sm uppercase tracking-widest font-bold border-b-2 border-primary text-primary transition-all duration-300 active:scale-95" data-filter="all">全部</button>
+            <button class="filter-tab px-3 sm:px-6 py-2 sans-label text-xs sm:text-sm uppercase tracking-widest font-bold border-b-2 border-transparent text-secondary hover:text-on-background transition-all duration-300 active:scale-95" data-filter="2025">2025</button>
+            <button class="filter-tab px-3 sm:px-6 py-2 sans-label text-xs sm:text-sm uppercase tracking-widest font-bold border-b-2 border-transparent text-secondary hover:text-on-background transition-all duration-300 active:scale-95" data-filter="2024">2024</button>
+            <button class="filter-tab px-3 sm:px-6 py-2 sans-label text-xs sm:text-sm uppercase tracking-widest font-bold border-b-2 border-transparent text-secondary hover:text-on-background transition-all duration-300 active:scale-95" data-filter="archive">2023 及以前</button>
         </div>
     </nav>
 
     <!-- AEO Quick Answer Block -->
-    <div class="w-full border-y mb-16 py-8 px-4 md:px-8 -mx-4 md:-mx-8" style="background-color:#1b1c1a;border-color:rgba(197,160,89,0.2)">
-        <div class="max-w-[1440px] flex items-start gap-5">
+    <div class="w-full border-y mb-10 md:mb-16 py-6 md:py-8 px-4 md:px-8 -mx-4 md:-mx-8" style="background-color:#1b1c1a;border-color:rgba(197,160,89,0.2)">
+        <div class="max-w-[1440px] flex items-start gap-4 sm:gap-5">
             <span class="material-symbols-outlined text-xl mt-0.5 flex-shrink-0" style="color:#c5a059">info</span>
             <div>
-                <p class="sans-label text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style="color:#c5a059">快速解答 · Quick Answer</p>
-                <p class="sans-label text-sm md:text-base leading-relaxed font-light" style="color:rgba(250,249,246,0.80)">全球十大华人历届荣誉榜收录了自2023年以来全球最具影响力的华人商业领袖完整档案，包括黄仁勋、李嘉诚、张一鸣、郭鹤年等各领域标杆人物。每位荣誉人物均经过严格的多维度评审，涵盖商业影响力、创新贡献与全球视野三大核心维度。</p>
+                <p class="sans-label text-[10px] tracking-[0.3em] uppercase font-bold mb-1.5 sm:mb-2" style="color:#c5a059">快速解答 · Quick Answer</p>
+                <p class="sans-label text-xs sm:text-sm md:text-base leading-relaxed font-light" style="color:rgba(250,249,246,0.80)">全球十大华人历届荣誉榜收录了自2023年以来全球最具影响力的华人商业领袖完整档案，包括黄仁勋、李嘉诚、张一鸣、郭鹤年等各领域标杆人物。每位荣誉人物均经过严格的多维度评审，涵盖商业影响力、创新贡献与全球视野三大核心维度。</p>
             </div>
         </div>
     </div>
 
     <!-- Gallery Group: 2025 -->
-    <section class="honoree-section mb-32" data-year="2025">
-        <div class="flex items-baseline justify-between mb-12">
-            <h2 class="serif-display text-7xl md:text-9xl leading-none font-black opacity-10 select-none">2025</h2>
-            <div class="h-px flex-grow mx-8 bg-surface-container-high"></div>
-            <div class="serif-display text-2xl font-bold italic text-primary">前沿新突破</div>
+    <section class="honoree-section mb-14 md:mb-32" data-year="2025">
+        <div class="flex items-baseline justify-between mb-6 md:mb-12">
+            <h2 class="serif-display text-5xl sm:text-7xl md:text-9xl leading-none font-black opacity-10 select-none">2025</h2>
+            <div class="h-px flex-grow mx-4 sm:mx-8 bg-surface-container-high"></div>
+            <div class="serif-display text-lg sm:text-2xl font-bold italic text-primary">前沿新突破</div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-8 lg:gap-12">
             <!-- Zhong Shanshan -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/zhong-shanshan.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/zhong-shanshan.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/451074baf6c44ccc9d8cd96a164dbdfe.webp" loading="lazy" alt="Zhong Shanshan"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">商业巨头</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">钟睒睒</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Zhong Shanshan</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">农夫山泉 (Nongfu Spring) • Chairman</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">商业巨头</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">钟睒睒</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Zhong Shanshan</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">农夫山泉 (Nongfu Spring) • Chairman</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Jensen Huang -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/jensen-huang.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/jensen-huang.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-[25%_center] transition-all duration-700 group-hover:scale-105" src="assets/images/0x0.webp" loading="lazy" alt="Jensen Huang"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">行业领袖</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">黄仁勋</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Jensen Huang</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">英伟达 (NVIDIA) • CEO</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">行业领袖</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">黄仁勋</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Jensen Huang</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">英伟达 (NVIDIA) • CEO</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Quek Leng Chan -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/quek-leng-chan.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/quek-leng-chan.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/BH250216KW208.jpg.transformed.webp" loading="lazy" alt="Quek Leng Chan"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">行业领袖</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">郭令灿</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Quek Leng Chan</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">丰隆集团 (Hong Leong Group) • Chairman</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">行业领袖</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">郭令灿</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Quek Leng Chan</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">丰隆集团 (Hong Leong Group) • Chairman</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Ma Yun -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/ma-yun.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/ma-yun.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/E-commerce-fuels-fortunes-of-richest-Chinese-1.webp" loading="lazy" alt="Ma Yun"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">破局者</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">马云</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Ma Yun</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">阿里巴巴 (Alibaba Group) • Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">破局者</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">马云</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Ma Yun</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">阿里巴巴 (Alibaba Group) • Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Li Ka-shing -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/li-ka-shing.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/li-ka-shing.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/images.jpeg" loading="lazy" alt="Li Ka-shing"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">行业领袖</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">李嘉诚</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Li Ka-shing</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">CK Hutchison • Senior Advisor</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">行业领袖</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">李嘉诚</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Li Ka-shing</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">CK Hutchison • Senior Advisor</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Zhang Yiming -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/zhang-yiming.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/zhang-yiming.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/张一鸣-online.jpeg" loading="lazy" alt="Zhang Yiming"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">破局者</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">张一鸣</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Zhang Yiming</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">ByteDance • Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">破局者</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">张一鸣</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Zhang Yiming</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">ByteDance • Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Robert Kuok -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/robert-kuok.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/robert-kuok.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-[55%_center] transition-all duration-700 group-hover:scale-105" src="assets/images/682f9fe8e80959faa7a0c5a62c64e3a6.jpg" loading="lazy" alt="Robert Kuok"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">商业巨头</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">郭鹤年</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Robert Kuok</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">Kuok Group • Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">商业巨头</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">郭鹤年</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Robert Kuok</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">Kuok Group • Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Joseph Tsai -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='#'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='#'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/5_aR6KKN_5BkCRNhr7YuKTVE6NP9VWXoHF4u9BxeLvQ.jpeg" loading="lazy" alt="Joseph Tsai"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">破局者</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">蔡崇信 🇭🇰</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Joseph Tsai</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">Alibaba Group / Brooklyn Nets • Co-Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">破局者</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">蔡崇信 🇭🇰</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Joseph Tsai</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">Alibaba Group / Brooklyn Nets • Co-Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Lawrence Ho -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='#'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='#'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/images (22).jpeg" loading="lazy" alt="Lawrence Ho"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">创新先锋</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">何猷龙 🇭🇰</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Lawrence Ho</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">Melco Resorts & Entertainment • Chairman & CEO</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">创新先锋</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">何猷龙 🇭🇰</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Lawrence Ho</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">Melco Resorts & Entertainment • Chairman & CEO</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Sukanto Tanoto -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='#'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='#'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-[68%_center] transition-all duration-700 group-hover:scale-105" src="assets/images/cropped-Sukanto-Tanoto-Header.jpg" loading="lazy" alt="Sukanto Tanoto"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">商业巨头</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">陈江和 🇸🇬</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Sukanto Tanoto</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">RGE Group • Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">商业巨头</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">陈江和 🇸🇬</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Sukanto Tanoto</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">RGE Group • Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Wang Xing -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='#'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='#'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-[62%_center] transition-all duration-700 group-hover:scale-105" src="assets/images/884e-79190e8169648f1465f5264aee47dc70.jpg" loading="lazy" alt="Wang Xing"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">破局者</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">王兴 🇨🇳</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Wang Xing</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">Meituan • Founder & CEO</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">破局者</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">王兴 🇨🇳</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Wang Xing</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">Meituan • Founder & CEO</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Ren Zhengfei -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='#'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='#'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/images (23).jpeg" loading="lazy" alt="Ren Zhengfei"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">行业领袖</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">任正非 🇨🇳</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Ren Zhengfei</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">Huawei • Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">行业领袖</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">任正非 🇨🇳</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Ren Zhengfei</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">Huawei • Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Richard Li -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='#'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='#'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2025</span>
                     <img class="w-full h-full object-cover object-[55%_top] transition-all duration-700 group-hover:scale-105" src="assets/images/ea0a19e898f7fdf68cb7e2d21fa36b6022c52c1d6c194aa95a3b871eb4a45b54.webp" loading="lazy" alt="Richard Li"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">行业领袖</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">李泽楷 🇭🇰</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Richard Li</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">PCCW • Chairman</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">行业领袖</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">李泽楷 🇭🇰</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Richard Li</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">PCCW • Chairman</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
@@ -580,81 +577,81 @@
     </section>
 
     <!-- Gallery Group: 2024 -->
-    <section class="honoree-section mb-32" data-year="2024">
-        <div class="flex items-baseline justify-between mb-12">
-            <div class="serif-display text-2xl font-bold italic text-secondary">重塑韧性时代</div>
-            <div class="h-px flex-grow mx-8 bg-surface-container-high"></div>
-            <h2 class="serif-display text-7xl md:text-9xl leading-none font-black opacity-10 select-none">2024</h2>
+    <section class="honoree-section mb-14 md:mb-32" data-year="2024">
+        <div class="flex items-baseline justify-between mb-6 md:mb-12">
+            <div class="serif-display text-lg sm:text-2xl font-bold italic text-secondary">重塑韧性时代</div>
+            <div class="h-px flex-grow mx-4 sm:mx-8 bg-surface-container-high"></div>
+            <h2 class="serif-display text-5xl sm:text-7xl md:text-9xl leading-none font-black opacity-10 select-none">2024</h2>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-8 lg:gap-12">
             <!-- Pony Ma -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/pony-ma.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/pony-ma.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
                     <img class="w-full h-full object-cover object-[center_20%] transition-all duration-700 group-hover:scale-105" src="assets/images/https___prod-bof-media.s3.eu-west-1.amazonaws.com_import_profiles_asset_1610588066484270_pony-ma-1610588097009163.avif" loading="lazy" alt="Pony Ma"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">商业巨头</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">马化腾</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Pony Ma</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">腾讯控股 (Tencent) • CEO</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">商业巨头</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">马化腾</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Pony Ma</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">腾讯控股 (Tencent) • CEO</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Lei Jun -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/lei-jun.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/lei-jun.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/Lei_Jun_at_Two_Sessions_2025.png" loading="lazy" alt="Lei Jun"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">破局者</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">雷军</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Lei Jun</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">小米集团 (Xiaomi) • CEO</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">破局者</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">雷军</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Lei Jun</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">小米集团 (Xiaomi) • CEO</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Jeffrey Cheah -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/jeffrey-cheah.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer lg:mt-12" onclick="location.href='honorees/jeffrey-cheah.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
                     <img class="w-full h-full object-cover object-[55%_center] transition-all duration-700 group-hover:scale-105" src="assets/images/mid-shot-of-tan-sri-sir-dr-jeffrey-cheah-kbe-ao.jpg" loading="lazy" alt="Jeffrey Cheah"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">开拓者</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">谢富年</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Jeffrey Cheah</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">双威集团 (Sunway Group) • Founder</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">开拓者</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">谢富年</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Jeffrey Cheah</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">双威集团 (Sunway Group) • Founder</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
 
             <!-- Lip-Bu Tan -->
-            <article class="flex flex-col group bg-white border border-outline-variant/10 p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/lip-bu-tan.html'">
+            <article class="flex flex-col group bg-white border border-outline-variant/10 p-2.5 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 relative cursor-pointer" onclick="location.href='honorees/lip-bu-tan.html'">
                 <div class="aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-surface-container relative">
-                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[10px] sans-label font-bold px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
+                    <span class="absolute top-2 right-2 z-10 bg-primary text-on-primary text-[9px] sm:text-[10px] sans-label font-bold px-1.5 sm:px-2 py-0.5 tracking-widest uppercase shadow">2024</span>
                     <img class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-105" src="assets/images/20250315fbc17a.webp" loading="lazy" alt="Lip-Bu Tan"/>
                 </div>
-                <div class="pt-6 flex flex-col flex-grow">
-                    <span class="inline-block self-start bg-gold/10 text-gold px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase rounded mb-2">创新先锋</span>
-                    <h3 class="serif-display text-2xl font-bold text-on-surface">陈立武</h3>
-                    <p class="sans-label text-xs text-secondary/70 font-normal mt-1 mb-4">Lip-Bu Tan</p>
-                    <p class="sans-label text-[0.7rem] uppercase tracking-widest text-secondary font-bold mb-4">英特尔 (Intel) • CEO</p>
-                    <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-widest mt-auto">
+                <div class="pt-3 sm:pt-6 flex flex-col flex-grow">
+                    <span class="inline-block self-start bg-gold/10 text-gold px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase rounded mb-1.5 sm:mb-2">创新先锋</span>
+                    <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface leading-tight">陈立武</h3>
+                    <p class="sans-label text-[11px] sm:text-xs text-secondary/70 font-normal mt-0.5 sm:mt-1 mb-2 sm:mb-4">Lip-Bu Tan</p>
+                    <p class="sans-label text-[0.65rem] sm:text-[0.7rem] uppercase tracking-wider sm:tracking-widest text-secondary font-bold mb-3 sm:mb-4 line-clamp-2 md:line-clamp-none">英特尔 (Intel) • CEO</p>
+                    <div class="flex items-center gap-1 text-primary text-[11px] sm:text-xs font-bold uppercase tracking-widest mt-auto">
                         <span>阅读完整档案</span>
-                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xs sm:text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                     </div>
                 </div>
             </article>
@@ -662,26 +659,26 @@
     </section>
 
     <!-- Empty State for 2023 及以前 -->
-    <div id="archive-empty-state" class="hidden text-center py-20 bg-surface-container-low border border-outline-variant/10 mb-32 max-w-4xl mx-auto" style="opacity: 0; transition: opacity 0.4s ease-in-out;">
-        <span class="material-symbols-outlined text-6xl text-gold mb-4">explore</span>
-        <h3 class="serif-display text-2xl font-bold mb-2">荣誉档案数字化整理中</h3>
-        <p class="font-body text-secondary text-sm max-w-md mx-auto px-4">
+    <div id="archive-empty-state" class="hidden text-center py-12 md:py-20 bg-surface-container-low border border-outline-variant/10 mb-14 md:mb-32 max-w-4xl mx-auto px-4" style="opacity: 0; transition: opacity 0.4s ease-in-out;">
+        <span class="material-symbols-outlined text-5xl sm:text-6xl text-gold mb-3 md:mb-4">explore</span>
+        <h3 class="serif-display text-xl sm:text-2xl font-bold mb-2">荣誉档案数字化整理中</h3>
+        <p class="font-body text-secondary text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
             更多 2023 及以前的历届荣誉档案正在进行高清与结构化数字化整理中。您可以在下方直接探索并下载历年深远影响力传承的分析报告与实体索引。
         </p>
     </div>
 
     <!-- Archive CTA Section -->
-    <section class="py-16 md:py-24 bg-surface-container-low flex flex-col items-center justify-center text-center px-4 md:px-8 mb-32">
-        <h2 class="serif-display text-5xl md:text-7xl font-black mb-8 max-w-4xl tracking-tighter">探索数十载深远影响力传承</h2>
-        <div class="flex flex-wrap justify-center gap-4">
-            <button class="bg-primary text-on-primary px-4 md:px-8 py-4 font-bold uppercase tracking-widest active:scale-95 transition-transform">浏览 2010–2023 年度榜单</button>
-            <button class="bg-on-background text-background px-4 md:px-8 py-4 font-bold uppercase tracking-widest active:scale-95 transition-transform">下载历年洞察报告</button>
+    <section class="py-12 md:py-24 bg-surface-container-low flex flex-col items-center justify-center text-center px-4 md:px-8 mb-14 md:mb-32">
+        <h2 class="serif-display text-3xl sm:text-5xl md:text-7xl font-black mb-6 md:mb-8 max-w-4xl tracking-tighter leading-tight">探索数十载深远影响力传承</h2>
+        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+            <button class="bg-primary text-on-primary px-6 md:px-8 py-3.5 md:py-4 font-bold uppercase tracking-widest active:scale-95 transition-transform text-xs sm:text-sm w-full sm:w-auto">浏览 2010–2023 年度榜单</button>
+            <button class="bg-on-background text-background px-6 md:px-8 py-3.5 md:py-4 font-bold uppercase tracking-widest active:scale-95 transition-transform text-xs sm:text-sm w-full sm:w-auto">下载历年洞察报告</button>
         </div>
     </section>
 </main>
 
 <!-- FAQ Section -->
-<section class="py-16 md:py-24 px-4 md:px-8 bg-background border-t border-outline-variant/10">
+<section class="py-12 md:py-24 px-4 md:px-8 bg-background border-t border-outline-variant/10">
     <div class="max-w-[1440px] mx-auto">
         <div class="mb-12">
             <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 block">常见问题 · FAQ</span>
@@ -689,7 +686,7 @@
         </div>
         <div class="space-y-3 max-w-3xl">
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-hon w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
+                <button class="faq-btn-hon w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 min-h-[48px] text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">全球十大华人评选标准是什么？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
@@ -698,7 +695,7 @@
                 </div>
             </div>
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-hon w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
+                <button class="faq-btn-hon w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 min-h-[48px] text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">历届荣誉榜涵盖哪些领域？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
@@ -707,7 +704,7 @@
                 </div>
             </div>
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-hon w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
+                <button class="faq-btn-hon w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 min-h-[48px] text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">如何提名候选人参加评选？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
@@ -716,7 +713,7 @@
                 </div>
             </div>
             <div class="border border-outline-variant/10 overflow-hidden">
-                <button class="faq-btn-hon w-full flex justify-between items-center px-6 py-5 text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
+                <button class="faq-btn-hon w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 min-h-[48px] text-left bg-surface-container-low hover:bg-surface-container transition-colors" onclick="toggleFaqHon(this)">
                     <span class="serif-display text-base md:text-lg font-bold text-on-surface">全球十大华人与福布斯榜单有什么不同？</span>
                     <span class="material-symbols-outlined text-primary transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
@@ -745,7 +742,7 @@ function toggleFaqHon(btn) {
         <!-- Column 1: Brand (4 cols) -->
         <div class="lg:col-span-4 flex flex-col">
             <div class="mb-6">
-                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain drop-shadow-xl" loading="lazy" />
+                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-12 w-auto object-contain drop-shadow-xl" loading="lazy" />
             </div>
             <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
                 连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。

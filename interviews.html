@@ -59,6 +59,12 @@
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .interview-card { transition: opacity 0.3s ease; }
+        @media (max-width: 767px) {
+            .interview-card .p-8 { padding: 1.25rem; }
+            .interview-card .mb-6 { margin-bottom: 0.75rem; }
+            .interview-card .mt-8 { margin-top: 1rem; }
+            .interview-card .pt-6 { padding-top: 0.75rem; }
+        }
     </style>
     <link rel="icon" type="image/png" href="assets/images/Top 10 chinese logo.png"/>
 
@@ -95,7 +101,7 @@
       "mainEntity": [
         {"@type": "Question", "name": "全球十大华人独家专访如何遴选受访对象？", "acceptedAnswer": {"@type": "Answer", "text": "受访对象的遴选基于候选人的行业影响力、创新贡献与思想领导力三大维度，由全球十大华人编辑委员会综合评估后确定。我们重点关注在科技领袖、商业巨头、资本运营与创新先锋四大领域中拥有独特商业洞见的领袖人物。"}},
         {"@type": "Question", "name": "专访内容如何保证真实性与深度？", "acceptedAnswer": {"@type": "Answer", "text": "每场专访均经过全球十大华人编辑团队与受访嘉宾的多轮深度沟通，确保内容真实反映受访者的商业哲学与战略思维。所有内容经受访者确认后方可发布，并附有完整的受访者背景信息供读者参考。"}},
-        {"@type": "Question", "name": "如何订阅最新专访通知？", "acceptedAnswer": {"@type": "Answer", "text": "读者可点击页面顶部的"订阅最新资讯"按钮，订阅全球十大华人的最新专访与深度洞察更新通知，确保第一时间获取最具价值的商业领袖深度对话。"}},
+        {"@type": "Question", "name": "如何订阅最新专访通知？", "acceptedAnswer": {"@type": "Answer", "text": "读者可关注全球十大华人的最新专访与深度洞察栏目更新，确保第一时间获取最具价值的商业领袖深度对话。"}},
         {"@type": "Question", "name": "全球十大华人独家专访与一般媒体采访有什么不同？", "acceptedAnswer": {"@type": "Answer", "text": "全球十大华人独家专访的核心差异在于其深度与精准度：每场专访聚焦受访者最核心的商业哲学与战略洞见，问题设计旨在提炼出读者无法从普通媒体报道中获取的深层战略思维与实战智慧。"}}
       ]
     }
@@ -107,7 +113,7 @@
 <nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
     <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
         <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
-            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain md:drop-shadow-xl" />
+            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-14 w-auto object-contain md:drop-shadow-xl" />
         </a>
         <div class="hidden md:flex gap-4 lg:gap-8 items-center">
             <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="insights.html">深度洞察</a>
@@ -129,9 +135,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center gap-3 md:gap-4 z-50 relative">
-            <button class="bg-primary text-on-primary px-4 md:px-6 py-2 serif-display uppercase tracking-widest text-[0.65rem] md:text-[0.75rem] font-bold active:scale-95 transition-transform whitespace-nowrap shadow-lg shadow-primary/20">订阅最新资讯</button>
-            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-1 focus:outline-none">
+        <div class="flex items-center z-50 relative">
+            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] min-h-[44px] min-w-[44px] p-2 -mr-2 flex items-center justify-center focus:outline-none" aria-label="打开导航菜单">
                 <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
             </button>
         </div>
@@ -196,12 +201,12 @@
 <main class="min-h-screen pt-20">
 
     <!-- Page Hero -->
-    <section class="pt-32 pb-16 px-4 md:px-12 max-w-[1920px] mx-auto flex flex-col justify-center border-b border-white/5 relative bg-[#121212] overflow-hidden">
-        <div class="text-center relative z-10 py-16 lg:py-24">
-            <span class="sans-label text-gold tracking-[0.4em] font-black text-xs md:text-sm uppercase mb-6 border-b-2 border-gold/30 pb-4 inline-block">The Circle</span>
-            <h1 class="serif-display text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-8 text-white">独家专访</h1>
+    <section class="pt-16 pb-10 md:pt-32 md:pb-16 px-4 md:px-12 max-w-[1920px] mx-auto flex flex-col justify-center border-b border-white/5 relative bg-[#121212] overflow-hidden">
+        <div class="text-center relative z-10 py-8 md:py-16 lg:py-24">
+            <span class="sans-label text-gold tracking-[0.4em] font-black text-xs md:text-sm uppercase mb-4 md:mb-6 border-b-2 border-gold/30 pb-3 md:pb-4 inline-block">The Circle</span>
+            <h1 class="serif-display text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 md:mb-8 text-white">独家专访</h1>
             <p class="text-secondary/80 text-xs md:text-2xl tracking-[0.2em] md:tracking-[0.3em] uppercase">Exclusive Interviews</p>
-            <p class="text-[#faf9f6]/70 text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-light mt-8">
+            <p class="text-[#faf9f6]/70 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto font-light mt-4 md:mt-8 px-2">
                 聚焦全球最具影响力的华人领袖。<br/>深度剖析他们在极度不确定的时代周期中，如何跳脱传统框架，建立不可逾越的核心护城河。
             </p>
         </div>
@@ -209,7 +214,7 @@
     </section>
 
     <!-- Category Filter (sticky) -->
-    <div class="sticky top-[72px] md:top-[88px] z-30 bg-black/95 backdrop-blur-md border-b border-white/5 shadow-md">
+    <div class="sticky top-[64px] md:top-[88px] z-30 bg-black/95 backdrop-blur-md border-b border-white/5 shadow-md">
         <div class="max-w-[1920px] mx-auto px-6 md:px-12">
             <div class="flex items-center gap-8 md:gap-12 overflow-x-auto py-5 select-none hide-scrollbar" id="category-filters">
                 <button class="filter-btn sans-label text-[13px] text-gold font-bold uppercase whitespace-nowrap border-b-2 border-gold pb-1 transition-all" data-filter="all">全部</button>
@@ -448,7 +453,7 @@
                     <span class="material-symbols-outlined text-[#bb0002] transition-transform duration-300 flex-shrink-0 ml-4">add</span>
                 </button>
                 <div class="faq-answer-int px-6 pb-5 hidden bg-[#121212]">
-                    <p class="sans-label text-sm md:text-base text-[#a0a0a0] leading-relaxed">读者可点击页面顶部的"订阅最新资讯"按钮，订阅全球十大华人的最新专访与深度洞察更新通知，确保第一时间获取最具价值的商业领袖深度对话。</p>
+                    <p class="sans-label text-sm md:text-base text-[#a0a0a0] leading-relaxed">读者可关注全球十大华人的最新专访与深度洞察栏目更新，确保第一时间获取最具价值的商业领袖深度对话。</p>
                 </div>
             </div>
             <div class="border border-white/10 overflow-hidden">
@@ -481,7 +486,7 @@ function toggleFaqInt(btn) {
         <!-- Column 1: Brand (4 cols) -->
         <div class="lg:col-span-4 flex flex-col">
             <div class="mb-6">
-                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain drop-shadow-xl" loading="lazy" />
+                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-12 w-auto object-contain drop-shadow-xl" loading="lazy" />
             </div>
             <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
                 连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。

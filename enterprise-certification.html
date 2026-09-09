@@ -133,7 +133,7 @@
 <nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
     <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
         <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
-            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain md:drop-shadow-xl" />
+            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-14 w-auto object-contain md:drop-shadow-xl" />
         </a>
         
         <div class="hidden md:flex gap-4 lg:gap-8 items-center">
@@ -161,7 +161,7 @@
             <a href="#process" class="bg-primary text-on-primary px-4 md:px-6 py-2 serif-display uppercase tracking-widest text-[0.65rem] md:text-[0.75rem] font-bold active:scale-95 transition-transform whitespace-nowrap shadow-lg shadow-primary/20 inline-block text-center">
                 申请企业认证
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-1 focus:outline-none">
+            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] min-h-[44px] min-w-[44px] p-2 -mr-2 flex items-center justify-center focus:outline-none" aria-label="打开导航菜单">
                 <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
             </button>
         </div>
@@ -230,14 +230,14 @@
     });
 </script>
 
-<main class="pt-24 flex-grow">
+<main class="pt-20 md:pt-24 flex-grow">
 
     <!-- ============================================================ -->
     <!-- ENTERPRISE CERTIFICATION HERO                                 -->
     <!-- ============================================================ -->
     <section class="relative bg-background border-b border-outline-variant/10 overflow-hidden">
         <!-- Hero Visual Area: Full-Bleed Background Visual Layer -->
-        <div class="relative min-h-[560px] lg:min-h-[640px] flex items-center py-16 md:py-24 px-4 md:px-8">
+        <div class="relative min-h-[500px] sm:min-h-[560px] lg:min-h-[640px] flex items-center py-12 sm:py-16 md:py-24 px-4 md:px-8">
             <!-- Full-Width Architectural & Global Visual -->
             <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
                 <img src="ChatGPT Image 2026年9月8日 15_31_43.png" 
@@ -246,31 +246,31 @@
                 
                 <!-- Seamless Blend Overlays: keeps left text crystal clear while preserving right skyline & globe -->
                 <div class="absolute inset-0 hidden sm:block pointer-events-none" style="background: linear-gradient(to right, #faf9f6 0%, rgba(250, 249, 246, 0.95) 38%, rgba(250, 249, 246, 0.4) 60%, transparent 85%);"></div>
-                <div class="absolute inset-0 sm:hidden pointer-events-none" style="background: rgba(250, 249, 246, 0.88);"></div>
+                <div class="absolute inset-0 sm:hidden pointer-events-none" style="background: rgba(250, 249, 246, 0.92);"></div>
                 <div class="absolute bottom-0 inset-x-0 h-20 pointer-events-none" style="background: linear-gradient(to top, #faf9f6 0%, transparent 100%);"></div>
             </div>
 
             <!-- Content Container: Max Width 1440px -->
             <div class="relative z-10 max-w-[1440px] mx-auto w-full">
                 <div class="max-w-xl lg:max-w-2xl xl:max-w-[760px]">
-                    <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">ENTERPRISE CERTIFICATION · 企业认证介绍</span>
-                    <h1 class="serif-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] font-black tracking-tighter text-on-surface mb-8">
+                    <span class="sans-label text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 md:mb-4 block">ENTERPRISE CERTIFICATION · 企业认证介绍</span>
+                    <h1 class="serif-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight md:leading-[0.9] font-black tracking-tighter text-on-surface mb-4 md:mb-8">
                         全球华人<br/><span class="text-primary italic">卓越企业认证</span>
                     </h1>
-                    <div class="h-px bg-on-surface/10 w-full mb-8"></div>
-                    <p class="font-body text-lg md:text-xl text-secondary leading-relaxed font-normal mb-6">
+                    <div class="h-px bg-on-surface/10 w-full mb-4 md:mb-8"></div>
+                    <p class="font-body text-base sm:text-lg md:text-xl text-secondary leading-relaxed font-normal mb-4 sm:mb-6">
                         由全球十大华人推出，面向由华人创办、领导，或在全球华人市场具有代表性及影响力的优秀企业。
                     </p>
-                    <p class="font-body text-base md:text-lg text-secondary leading-relaxed mb-8">
+                    <p class="font-body text-sm sm:text-base md:text-lg text-secondary leading-relaxed mb-6 md:mb-8">
                         在日益复杂的全球化商业格局与多边监管环境下，华人企业的商业实力与诚信治理面临着更高标准的审视。“全球华人卓越企业认证”旨在确立一套客观、审慎且具有高度代表性的评估标杆，聚焦深入考察企业的长效经营韧性、行业引领地位与卓越社会信誉。
                     </p>
                     
                     <!-- Integrated Dual CTA Row -->
-                    <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
-                        <a href="#eligibility" class="inline-flex items-center justify-center bg-white/90 backdrop-blur-sm border border-on-surface/30 hover:border-primary hover:text-primary text-on-surface px-8 py-4 serif-display uppercase tracking-widest text-xs md:text-sm font-bold transition-all duration-300 text-center shadow-sm">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center">
+                        <a href="#eligibility" class="inline-flex items-center justify-center bg-white/90 backdrop-blur-sm border border-on-surface/30 hover:border-primary hover:text-primary text-on-surface px-6 sm:px-8 py-3.5 sm:py-4 serif-display uppercase tracking-widest text-xs md:text-sm font-bold transition-all duration-300 text-center shadow-sm active:scale-95">
                             了解申请条件
                         </a>
-                        <a href="#process" class="inline-flex items-center justify-center bg-primary hover:bg-primary-container text-on-primary px-8 py-4 serif-display uppercase tracking-widest text-xs md:text-sm font-bold transition-all duration-300 shadow-lg shadow-primary/20 text-center">
+                        <a href="#process" class="inline-flex items-center justify-center bg-primary hover:bg-primary-container text-on-primary px-6 sm:px-8 py-3.5 sm:py-4 serif-display uppercase tracking-widest text-xs md:text-sm font-bold transition-all duration-300 shadow-lg shadow-primary/20 text-center active:scale-95">
                             申请企业认证 <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
                         </a>
                     </div>
@@ -284,7 +284,7 @@
     <!-- ============================================================ -->
     <div class="border-b border-outline-variant/10 bg-background shadow-sm">
         <div class="max-w-[1440px] mx-auto px-4 md:px-8">
-            <div class="flex items-center gap-6 md:gap-10 overflow-x-auto py-4 select-none hide-scrollbar text-xs md:text-sm">
+            <div class="flex items-center gap-5 md:gap-10 overflow-x-auto py-3 md:py-4 select-none hide-scrollbar text-xs md:text-sm">
                 <a href="#intro" class="sans-label uppercase tracking-widest text-primary border-b-2 border-primary pb-1 font-bold whitespace-nowrap">企业认证介绍</a>
                 <a href="#eligibility" class="sans-label uppercase tracking-widest text-on-surface/70 hover:text-primary transition-colors whitespace-nowrap">申请条件</a>
                 <a href="#standards" class="sans-label uppercase tracking-widest text-on-surface/70 hover:text-primary transition-colors whitespace-nowrap">评估标准</a>
@@ -298,69 +298,69 @@
     <!-- ============================================================ -->
     <!-- SECTION 1: 企业认证介绍 (EVALUATION FRAMEWORK / FOUR PILLARS) -->
     <!-- ============================================================ -->
-    <section id="intro" class="py-16 md:py-24 px-4 md:px-8 bg-background border-b border-outline-variant/10">
+    <section id="intro" class="py-12 md:py-24 px-4 md:px-8 bg-background border-b border-outline-variant/10">
         <div class="max-w-[1440px] mx-auto">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 md:mb-8 gap-3 sm:gap-4">
                 <div>
-                    <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary block mb-2">EVALUATION FRAMEWORK · 四大核心支柱</span>
-                    <h3 class="serif-display text-2xl md:text-3xl font-bold text-on-surface">卓越企业认证核心评估维度</h3>
+                    <span class="sans-label text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold text-primary block mb-1.5 sm:mb-2">EVALUATION FRAMEWORK · 四大核心支柱</span>
+                    <h3 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold text-on-surface">卓越企业认证核心评估维度</h3>
                 </div>
                 <p class="font-body text-xs text-secondary font-mono tracking-wider">DIMENSIONS 01–04</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
                 <!-- Pillar 1: 企业实力 -->
-                <div class="bg-white p-8 md:p-10 space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
                     <div>
-                        <span class="material-symbols-outlined text-primary text-3xl mb-2 block">corporate_fare</span>
-                        <h4 class="serif-display text-2xl font-bold text-on-surface mb-3">企业实力</h4>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mb-1.5 sm:mb-2 block">corporate_fare</span>
+                        <h4 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">企业实力</h4>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             考察企业在核心业务中的稳健经营能力、可持续发展韧性与在所属经济体中的产业规模基底。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-widest uppercase">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-widest uppercase">
                         PILLAR 01 · STRENGTH
                     </div>
                 </div>
 
                 <!-- Pillar 2: 品牌声誉 -->
-                <div class="bg-white p-8 md:p-10 space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
                     <div>
-                        <span class="material-symbols-outlined text-primary text-3xl mb-2 block">verified</span>
-                        <h4 class="serif-display text-2xl font-bold text-on-surface mb-3">品牌声誉</h4>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mb-1.5 sm:mb-2 block">verified</span>
+                        <h4 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">品牌声誉</h4>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             评估企业在全球及区域市场中所积累的公信力、品牌忠诚度以及跨文化商业生态中的受尊敬程度。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-widest uppercase">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-widest uppercase">
                         PILLAR 02 · REPUTATION
                     </div>
                 </div>
 
                 <!-- Pillar 3: 行业贡献 -->
-                <div class="bg-white p-8 md:p-10 space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
                     <div>
-                        <span class="material-symbols-outlined text-primary text-3xl mb-2 block">hub</span>
-                        <h4 class="serif-display text-2xl font-bold text-on-surface mb-3">行业贡献</h4>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mb-1.5 sm:mb-2 block">hub</span>
+                        <h4 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">行业贡献</h4>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             着眼于企业是否在技术突破、产业链协同、商业模式革新或行业标准树立中发挥关键带动作用。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-widest uppercase">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-widest uppercase">
                         PILLAR 03 · IMPACT
                     </div>
                 </div>
 
                 <!-- Pillar 4: 诚信记录 -->
-                <div class="bg-white p-8 md:p-10 space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-4 sharp-0 border border-outline-variant/20 flex flex-col justify-between hover:border-primary transition-all duration-300 shadow-sm">
                     <div>
-                        <span class="material-symbols-outlined text-primary text-3xl mb-2 block">verified_user</span>
-                        <h4 class="serif-display text-2xl font-bold text-on-surface mb-3">诚信记录</h4>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mb-1.5 sm:mb-2 block">verified_user</span>
+                        <h4 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">诚信记录</h4>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             衡量企业在公司治理、合规经营、合同履约及企业公民责任实践中始终如一的高水准信誉。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-widest uppercase">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-widest uppercase">
                         PILLAR 04 · INTEGRITY
                     </div>
                 </div>
@@ -371,71 +371,71 @@
     <!-- ============================================================ -->
     <!-- SECTION 2: 什么企业可以申请                                  -->
     <!-- ============================================================ -->
-    <section id="eligibility" class="py-16 md:py-24 px-4 md:px-8 bg-white border-b border-outline-variant/10">
+    <section id="eligibility" class="py-12 md:py-24 px-4 md:px-8 bg-white border-b border-outline-variant/10">
         <div class="max-w-[1440px] mx-auto">
             
             <!-- Horizontal Two-Column Section Header -->
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-16 gap-6 border-b border-outline-variant/10 pb-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 md:mb-16 gap-4 md:gap-6 border-b border-outline-variant/10 pb-6 md:pb-8">
                 <div class="max-w-2xl">
-                    <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 block">ELIGIBILITY · 申请准入条件</span>
-                    <h2 class="serif-display text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">什么企业可以申请</h2>
+                    <span class="sans-label text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold text-primary mb-2 sm:mb-3 block">ELIGIBILITY · 申请准入条件</span>
+                    <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">什么企业可以申请</h2>
                 </div>
                 <div class="max-w-xl">
-                    <p class="font-body text-base md:text-lg text-secondary leading-relaxed">
+                    <p class="font-body text-sm sm:text-base md:text-lg text-secondary leading-relaxed">
                         全球华人卓越企业认证保持严谨、包容且务实的准入视野，面向符合以下基准范畴的商业实体开放评估申请：
                     </p>
                 </div>
             </div>
 
             <!-- 3 Core Application Categories (Full Width 3-Column Layout) -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 <!-- Condition 1 -->
-                <div class="bg-surface-container-low p-8 md:p-10 border-t-4 border-primary space-y-6 sharp-0 shadow-sm border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-8 md:p-10 border-t-4 border-primary space-y-4 sm:space-y-6 sharp-0 shadow-sm border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3 sm:mb-4">
                             <span class="sans-label text-xs uppercase tracking-widest font-bold text-primary">范畴一 · FOUNDERSHIP</span>
                             <span class="material-symbols-outlined text-primary text-2xl">badge</span>
                         </div>
-                        <h3 class="serif-display text-2xl md:text-3xl font-bold text-on-surface mb-4">由华人创办的企业</h3>
-                        <p class="font-body text-sm md:text-base text-secondary leading-relaxed">
+                        <h3 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold text-on-surface mb-2 sm:mb-4">由华人创办的企业</h3>
+                        <p class="font-body text-xs sm:text-sm md:text-base text-secondary leading-relaxed">
                             企业的创立者、联合创始人或核心创始团队具有华人背景，并在企业的创立历程中注入了独特的商业远见与开拓精神。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60 tracking-wider">
                         CRITERION 01
                     </div>
                 </div>
 
                 <!-- Condition 2 -->
-                <div class="bg-surface-container-low p-8 md:p-10 border-t-4 border-gold space-y-6 sharp-0 shadow-sm border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-8 md:p-10 border-t-4 border-gold space-y-4 sm:space-y-6 sharp-0 shadow-sm border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3 sm:mb-4">
                             <span class="sans-label text-xs uppercase tracking-widest font-bold text-gold">范畴二 · LEADERSHIP</span>
                             <span class="material-symbols-outlined text-gold text-2xl">person_check</span>
                         </div>
-                        <h3 class="serif-display text-2xl md:text-3xl font-bold text-on-surface mb-4">由华人领导的企业</h3>
-                        <p class="font-body text-sm md:text-base text-secondary leading-relaxed">
+                        <h3 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold text-on-surface mb-2 sm:mb-4">由华人领导的企业</h3>
+                        <p class="font-body text-xs sm:text-sm md:text-base text-secondary leading-relaxed">
                             企业的现任董事长、首席执行官（CEO）或核心管理决策层由华人精英担当，实际主导企业的战略方向与运营管理。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60 tracking-wider">
                         CRITERION 02
                     </div>
                 </div>
 
                 <!-- Condition 3 -->
-                <div class="bg-surface-container-low p-8 md:p-10 border-t-4 border-on-surface space-y-6 sharp-0 shadow-sm border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-8 md:p-10 border-t-4 border-on-surface space-y-4 sm:space-y-6 sharp-0 shadow-sm border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3 sm:mb-4">
                             <span class="sans-label text-xs uppercase tracking-widest font-bold text-on-surface">范畴三 · MARKET INFLUENCE</span>
                             <span class="material-symbols-outlined text-on-surface text-2xl">public</span>
                         </div>
-                        <h3 class="serif-display text-2xl md:text-3xl font-bold text-on-surface mb-4">在全球华人市场具影响力</h3>
-                        <p class="font-body text-sm md:text-base text-secondary leading-relaxed">
+                        <h3 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold text-on-surface mb-2 sm:mb-4">在全球华人市场具影响力</h3>
+                        <p class="font-body text-xs sm:text-sm md:text-base text-secondary leading-relaxed">
                             无论机构注册地位于何处，企业的产品、服务或资本在全球华人聚居区及东盟、泛亚太等关键市场具有高度代表性与示范效应。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 text-xs font-mono text-secondary/60 tracking-wider">
                         CRITERION 03
                     </div>
                 </div>
@@ -447,88 +447,88 @@
     <!-- ============================================================ -->
     <!-- SECTION 3: 认证评估标准                                      -->
     <!-- ============================================================ -->
-    <section id="standards" class="py-16 md:py-24 px-4 md:px-8 bg-background border-b border-outline-variant/10">
+    <section id="standards" class="py-12 md:py-24 px-4 md:px-8 bg-background border-b border-outline-variant/10">
         <div class="max-w-[1440px] mx-auto">
             
             <!-- Horizontal Two-Column Section Header -->
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-16 gap-6 border-b border-outline-variant/10 pb-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 md:mb-16 gap-4 md:gap-6 border-b border-outline-variant/10 pb-6 md:pb-8">
                 <div class="max-w-2xl">
-                    <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 block">EVALUATION DIMENSIONS · 评估标准</span>
-                    <h2 class="serif-display text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">认证评估标准</h2>
+                    <span class="sans-label text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold text-primary mb-2 sm:mb-3 block">EVALUATION DIMENSIONS · 评估标准</span>
+                    <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">认证评估标准</h2>
                 </div>
                 <div class="max-w-xl">
-                    <p class="font-body text-base md:text-lg text-secondary leading-relaxed">
+                    <p class="font-body text-sm sm:text-base md:text-lg text-secondary leading-relaxed">
                         认证评审委员会严格围绕四大核心维度展开定性与定量维度的综合考量，确保每家获认证企业均具有无可争议的行业公信力：
                     </p>
                 </div>
             </div>
 
-            <!-- Four Dimensions Grid (Full-Width Four-Column Desktop Composition) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Four Dimensions Grid (Full-Width Four-Column Desktop Composition, 2-col Mobile) -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
                 <!-- Dimension 1 -->
-                <div class="bg-white p-8 md:p-10 space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
                     <div>
-                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-4 mb-4">
-                            <span class="font-mono text-primary font-bold text-2xl">01</span>
-                            <span class="sans-label text-[10px] uppercase tracking-widest text-gold font-bold">维度一 · DIMENSION 1</span>
+                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-3 sm:pb-4 mb-3 sm:mb-4">
+                            <span class="font-mono text-primary font-bold text-xl sm:text-2xl">01</span>
+                            <span class="sans-label text-[9px] sm:text-[10px] uppercase tracking-widest text-gold font-bold">维度一</span>
                         </div>
-                        <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">企业实力</h3>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">企业实力</h3>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             全面考察参评企业的核心资产质量、经营效益与业务护城河。注重企业在面对周期波动与宏观挑战时表现出的抗风险韧性，以及在全球或区域供应链中的基础支柱地位。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-wider">
                         STRENGTH &amp; SCALE
                     </div>
                 </div>
 
                 <!-- Dimension 2 -->
-                <div class="bg-white p-8 md:p-10 space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
                     <div>
-                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-4 mb-4">
-                            <span class="font-mono text-primary font-bold text-2xl">02</span>
-                            <span class="sans-label text-[10px] uppercase tracking-widest text-gold font-bold">维度二 · DIMENSION 2</span>
+                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-3 sm:pb-4 mb-3 sm:mb-4">
+                            <span class="font-mono text-primary font-bold text-xl sm:text-2xl">02</span>
+                            <span class="sans-label text-[9px] sm:text-[10px] uppercase tracking-widest text-gold font-bold">维度二</span>
                         </div>
-                        <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">品牌声誉</h3>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">品牌声誉</h3>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             评估企业在商业伙伴、行业同仁及消费者心目中的品牌认知度与美誉度。重点关注其在主流媒体与专业评价中的真实口碑，以及跨国界商业拓展中的信任溢价。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-wider">
                         REPUTATION &amp; TRUST
                     </div>
                 </div>
 
                 <!-- Dimension 3 -->
-                <div class="bg-white p-8 md:p-10 space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
                     <div>
-                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-4 mb-4">
-                            <span class="font-mono text-primary font-bold text-2xl">03</span>
-                            <span class="sans-label text-[10px] uppercase tracking-widest text-gold font-bold">维度三 · DIMENSION 3</span>
+                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-3 sm:pb-4 mb-3 sm:mb-4">
+                            <span class="font-mono text-primary font-bold text-xl sm:text-2xl">03</span>
+                            <span class="sans-label text-[9px] sm:text-[10px] uppercase tracking-widest text-gold font-bold">维度三</span>
                         </div>
-                        <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">行业贡献</h3>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">行业贡献</h3>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             考察企业对所在产业的技术革新、标准制定或服务模式演进所作出的建设性贡献。优先认可那些为行业生态繁荣创造长期外溢价值与就业拉动效应的领军企业。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-wider">
                         INDUSTRY IMPACT
                     </div>
                 </div>
 
                 <!-- Dimension 4 -->
-                <div class="bg-white p-8 md:p-10 space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
+                <div class="bg-white p-4 sm:p-6 md:p-10 space-y-3 sm:space-y-6 border border-outline-variant/20 sharp-0 flex flex-col justify-between hover:border-primary transition-all duration-300">
                     <div>
-                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-4 mb-4">
-                            <span class="font-mono text-primary font-bold text-2xl">04</span>
-                            <span class="sans-label text-[10px] uppercase tracking-widest text-gold font-bold">维度四 · DIMENSION 4</span>
+                        <div class="flex items-center justify-between border-b border-outline-variant/10 pb-3 sm:pb-4 mb-3 sm:mb-4">
+                            <span class="font-mono text-primary font-bold text-xl sm:text-2xl">04</span>
+                            <span class="sans-label text-[9px] sm:text-[10px] uppercase tracking-widest text-gold font-bold">维度四</span>
                         </div>
-                        <h3 class="serif-display text-2xl font-bold text-on-surface mb-3">诚信记录</h3>
-                        <p class="font-body text-sm text-secondary leading-relaxed">
+                        <h3 class="serif-display text-lg sm:text-xl md:text-2xl font-bold text-on-surface mb-2 sm:mb-3">诚信记录</h3>
+                        <p class="font-body text-xs sm:text-sm text-secondary leading-relaxed">
                             审核企业在商业合作与公众履约中的信用表现，要求企业在知识产权保护、商业道德、合规治理与劳动关系中维持高度严谨守信的历史记录。
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-outline-variant/10 font-mono text-[10px] text-secondary/60 tracking-wider">
+                    <div class="pt-3 sm:pt-4 border-t border-outline-variant/10 font-mono text-[9px] sm:text-[10px] text-secondary/60 tracking-wider">
                         INTEGRITY &amp; GOVERNANCE
                     </div>
                 </div>
@@ -540,32 +540,32 @@
     <!-- ============================================================ -->
     <!-- SECTION 4: 认证申请流程                                      -->
     <!-- ============================================================ -->
-    <section id="process" class="py-16 md:py-24 px-4 md:px-8 bg-white border-b border-outline-variant/10">
+    <section id="process" class="py-12 md:py-24 px-4 md:px-8 bg-white border-b border-outline-variant/10">
         <div class="max-w-[1440px] mx-auto">
             
             <!-- Horizontal Two-Column Section Header -->
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-16 gap-6 border-b border-outline-variant/10 pb-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 md:mb-16 gap-4 md:gap-6 border-b border-outline-variant/10 pb-6 md:pb-8">
                 <div class="max-w-2xl">
-                    <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 block">APPLICATION PROCESS · 认证流程</span>
-                    <h2 class="serif-display text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">认证申请流程</h2>
+                    <span class="sans-label text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold text-primary mb-2 sm:mb-3 block">APPLICATION PROCESS · 认证流程</span>
+                    <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">认证申请流程</h2>
                 </div>
                 <div class="max-w-xl">
-                    <p class="font-body text-base md:text-lg text-secondary leading-relaxed">
+                    <p class="font-body text-sm sm:text-base md:text-lg text-secondary leading-relaxed">
                         企业认证遵循规范、审慎的审核通道，分为五个有序衔接的阶段步骤：
                     </p>
                 </div>
             </div>
 
             <!-- 5-Step Connected Process Pipeline Grid (01 → 02 → 03 → 04 → 05) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5 mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5 mb-10 md:mb-16">
                 <!-- Step 1 -->
-                <div class="bg-surface-container-low p-6 lg:p-7 border-t-2 border-primary space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-6 lg:p-7 border-t-2 border-primary space-y-3 sm:space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-3 border-b border-outline-variant/10">
                             <span class="font-mono text-xs text-primary font-bold tracking-widest">STEP 01</span>
                             <span class="material-symbols-outlined text-primary/40 text-base hidden lg:block">east</span>
                         </div>
-                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-4 mb-2">申请企业认证</h3>
+                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-3 sm:mt-4 mb-1.5 sm:mb-2">申请企业认证</h3>
                         <p class="font-body text-xs md:text-sm text-secondary leading-relaxed">
                             企业发起申请意向，获取申请指引及合规材料清单。
                         </p>
@@ -574,13 +574,13 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div class="bg-surface-container-low p-6 lg:p-7 border-t-2 border-primary/70 space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-6 lg:p-7 border-t-2 border-primary/70 space-y-3 sm:space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-3 border-b border-outline-variant/10">
                             <span class="font-mono text-xs text-primary font-bold tracking-widest">STEP 02</span>
                             <span class="material-symbols-outlined text-primary/40 text-base hidden lg:block">east</span>
                         </div>
-                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-4 mb-2">提交企业资料</h3>
+                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-3 sm:mt-4 mb-1.5 sm:mb-2">提交企业资料</h3>
                         <p class="font-body text-xs md:text-sm text-secondary leading-relaxed">
                             根据要求递交企业运营资质、品牌成就及信用合规证明材料。
                         </p>
@@ -589,13 +589,13 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="bg-surface-container-low p-6 lg:p-7 border-t-2 border-primary/40 space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-6 lg:p-7 border-t-2 border-primary/40 space-y-3 sm:space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-3 border-b border-outline-variant/10">
                             <span class="font-mono text-xs text-primary font-bold tracking-widest">STEP 03</span>
                             <span class="material-symbols-outlined text-primary/40 text-base hidden lg:block">east</span>
                         </div>
-                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-4 mb-2">资料审核与评估</h3>
+                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-3 sm:mt-4 mb-1.5 sm:mb-2">资料审核与评估</h3>
                         <p class="font-body text-xs md:text-sm text-secondary leading-relaxed">
                             独立专家委员会依据四大维度进行交叉对比、背景尽调与深度综合评定。
                         </p>
@@ -604,13 +604,13 @@
                 </div>
 
                 <!-- Step 4 -->
-                <div class="bg-surface-container-low p-6 lg:p-7 border-t-2 border-gold space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-6 lg:p-7 border-t-2 border-gold space-y-3 sm:space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-3 border-b border-outline-variant/10">
                             <span class="font-mono text-xs text-gold font-bold tracking-widest">STEP 04</span>
                             <span class="material-symbols-outlined text-gold/60 text-base hidden lg:block">east</span>
                         </div>
-                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-4 mb-2">认证结果</h3>
+                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-3 sm:mt-4 mb-1.5 sm:mb-2">认证结果</h3>
                         <p class="font-body text-xs md:text-sm text-secondary leading-relaxed">
                             评定通过后颁发对应年度卓越企业认证编号及官方认证名录收录证明。
                         </p>
@@ -619,13 +619,13 @@
                 </div>
 
                 <!-- Step 5 -->
-                <div class="bg-surface-container-low p-6 lg:p-7 border-t-2 border-gold space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
+                <div class="bg-surface-container-low p-5 sm:p-6 lg:p-7 border-t-2 border-gold space-y-3 sm:space-y-4 sharp-0 border-x border-b border-outline-variant/10 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between pb-3 border-b border-outline-variant/10">
                             <span class="font-mono text-xs text-gold font-bold tracking-widest">STEP 05</span>
                             <span class="material-symbols-outlined text-gold text-base hidden lg:block">verified</span>
                         </div>
-                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-4 mb-2">认证企业展示/查询</h3>
+                        <h3 class="serif-display text-lg lg:text-xl font-bold text-on-surface mt-3 sm:mt-4 mb-1.5 sm:mb-2">认证企业展示/查询</h3>
                         <p class="font-body text-xs md:text-sm text-secondary leading-relaxed">
                             入驻官方公开认证查询系统，支持全球合作伙伴与投资者实时查验。
                         </p>
@@ -635,26 +635,26 @@
             </div>
 
             <!-- Application Action Card (Full-Width Executive Banner) -->
-            <div class="bg-background p-8 md:p-12 border border-outline-variant/30 flex flex-col lg:flex-row items-center justify-between gap-8 sharp-0">
+            <div class="bg-background p-6 sm:p-8 md:p-12 border border-outline-variant/30 flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 sharp-0">
                 <div class="max-w-3xl">
-                    <div class="flex items-center gap-3 mb-3">
+                    <div class="flex items-center gap-3 mb-2 sm:mb-3">
                         <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary block">APPLICATION NOTICE · 申请通道</span>
                         <span class="w-1.5 h-1.5 bg-primary"></span>
                         <span class="text-xs text-secondary font-mono">2026 评审周期</span>
                     </div>
-                    <h3 class="serif-display text-2xl md:text-3xl font-bold text-on-surface mb-3">开启您的卓越企业认证申请</h3>
-                    <p class="font-body text-sm md:text-base text-secondary leading-relaxed">
+                    <h3 class="serif-display text-xl sm:text-2xl md:text-3xl font-bold text-on-surface mb-2 sm:mb-3">开启您的卓越企业认证申请</h3>
+                    <p class="font-body text-xs sm:text-sm md:text-base text-secondary leading-relaxed">
                         本认证计划现已启动年度审核筹备工作。由于每批次评估名额均遵循严谨的人工尽调与专家评审流程，欢迎符合条件的华人企业提前登记意向。
                     </p>
                     <p id="app-notice" class="text-xs text-primary/80 font-mono hidden pt-3 transition-all">
                         ※ 提示：当前线上申请入口处于年度评审名额预约阶段，请关注官方通知或通过下方企业查询系统了解最新认证规范。
                     </p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto shrink-0">
-                    <button onclick="handleApplicationClick()" class="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 serif-display uppercase tracking-widest text-xs font-bold transition-all duration-300 shadow-lg shadow-primary/20 text-center whitespace-nowrap">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full lg:w-auto shrink-0">
+                    <button onclick="handleApplicationClick()" class="w-full sm:w-auto bg-primary hover:bg-primary-container text-on-primary px-6 sm:px-8 py-3.5 sm:py-4 serif-display uppercase tracking-widest text-xs font-bold transition-all duration-300 shadow-lg shadow-primary/20 text-center whitespace-nowrap active:scale-95">
                         申请企业认证
                     </button>
-                    <a href="#verification" class="border-2 border-on-surface text-on-surface hover:bg-on-surface hover:text-white px-8 py-4 serif-display uppercase tracking-widest text-xs font-bold transition-all duration-300 text-center whitespace-nowrap">
+                    <a href="#verification" class="w-full sm:w-auto border-2 border-on-surface text-on-surface hover:bg-on-surface hover:text-white px-6 sm:px-8 py-3.5 sm:py-4 serif-display uppercase tracking-widest text-xs font-bold transition-all duration-300 text-center whitespace-nowrap active:scale-95">
                         了解认证流程
                     </a>
                 </div>
@@ -666,17 +666,17 @@
     <!-- ============================================================ -->
     <!-- SECTION 5: 认证企业 & 企业认证查询                           -->
     <!-- ============================================================ -->
-    <section id="directory" class="py-16 md:py-24 px-4 md:px-8 bg-background border-b border-outline-variant/10">
-        <div class="max-w-[1440px] mx-auto space-y-20">
+    <section id="directory" class="py-12 md:py-24 px-4 md:px-8 bg-background border-b border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto space-y-12 md:space-y-20">
 
             <!-- Horizontal Two-Column Section Header -->
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 border-b border-outline-variant/10 pb-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6 border-b border-outline-variant/10 pb-6 md:pb-8">
                 <div class="max-w-2xl">
-                    <span class="sans-label text-xs uppercase tracking-[0.3em] font-bold text-primary mb-3 block">DIRECTORY &amp; VERIFICATION · 名录与查询</span>
-                    <h2 class="serif-display text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">认证企业 &amp; 企业认证查询</h2>
+                    <span class="sans-label text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold text-primary mb-2 sm:mb-3 block">DIRECTORY &amp; VERIFICATION · 名录与查询</span>
+                    <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface leading-tight tracking-tight">认证企业 &amp; 企业认证查询</h2>
                 </div>
                 <div class="max-w-xl">
-                    <p class="font-body text-base md:text-lg text-secondary leading-relaxed">
+                    <p class="font-body text-sm sm:text-base md:text-lg text-secondary leading-relaxed">
                         为保障全球投资机构、商业伙伴及公众对获评机构的透明认知，本平台提供公开企业展示及证书编号核验系统。
                     </p>
                 </div>
@@ -1060,7 +1060,7 @@
         <!-- Column 1: Brand (4 cols) -->
         <div class="lg:col-span-4 flex flex-col">
             <div class="mb-6">
-                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain drop-shadow-xl" loading="lazy" />
+                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-10 md:h-12 w-auto object-contain drop-shadow-xl" loading="lazy" />
             </div>
             <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
                 连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。
