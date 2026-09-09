@@ -124,7 +124,9 @@ export async function generateArticleImage(title, imageAlt) {
 const KIE_API_BASE = "https://api.kie.ai";
 const KIE_MODEL = "nano-banana-2";
 const KIE_POLL_INTERVAL_MS = 3000;
-const KIE_MAX_POLL_ATTEMPTS = 20;
+// 40 * 3s = 120s. nano-banana-2 routinely takes 60-90s; 20 polls (60s) was timing out and
+// shipping the article with no image (the workflow has a 10-min ceiling, so headroom is fine).
+const KIE_MAX_POLL_ATTEMPTS = 40;
 
 /** @param {string} path @param {RequestInit} [init] */
 async function kieRequest(path, init) {
