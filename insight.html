@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="全球十大华人商业研究院深度观察：基于公开报道的独立分析。"/>
+    <meta name="robots" content="index, follow, max-image-preview:large"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "gold": "#c5a059",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#e90606",
+              "tertiary-container": "#747472",
+              "surface-variant": "#e3e2df",
+              "background": "#faf9f6",
+              "on-surface-variant": "#5f3f3a",
+              "surface-container": "#efeeeb",
+              "outline-variant": "#e9bcb5",
+              "on-primary": "#ffffff",
+              "secondary-container": "#e2e2e2",
+              "primary": "#bb0002",
+              "surface": "#faf9f6",
+              "on-background": "#1b1c1a",
+              "secondary": "#5e5e5e",
+              "surface-container-low": "#f4f3f0",
+              "on-surface": "#1b1c1a",
+              "surface-container-high": "#e9e8e5"
+            },
+            "borderRadius": { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+            "fontFamily": { "headline": ["Noto Serif"], "body": ["Inter"], "label": ["Inter"] }
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .serif-display { font-family: 'Noto Serif', serif; }
+        .sans-label { font-family: 'Inter', sans-serif; }
+    </style>
+    <link rel="icon" type="image/png" href="assets/images/Top 10 chinese logo.png"/>
+    <title>深度观察 | 全球十大华人</title>
+</head>
+<body class="bg-background text-[#0a0a0a] selection:bg-primary selection:text-on-primary overflow-x-hidden min-h-screen flex flex-col">
+
+<!-- Navigation Shell -->
+<nav class="fixed top-0 w-full left-0 right-0 z-50 bg-black/95 backdrop-blur-md shadow-xl shadow-black/50 border-b border-white/5">
+    <div class="max-w-[1440px] mx-auto w-full flex justify-between items-center px-4 md:px-8 py-4">
+        <a href="index.html" class="flex items-center gap-2 z-50 relative shrink-0 w-32 md:w-44">
+            <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain md:drop-shadow-xl" />
+        </a>
+        <div class="hidden md:flex gap-4 lg:gap-8 items-center">
+            <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="insights.html">深度洞察</a>
+            <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="interviews.html">独家专访</a>
+            <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="honorees.html">历届荣誉</a>
+            <a class="nav-link serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="enterprise-certification.html">企业认证</a>
+            <div class="relative group h-full flex items-center">
+                <button class="nav-dropdown-btn serif-display uppercase tracking-widest text-[0.75rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300 flex items-center gap-1 focus:outline-none">
+                    评选盛典 <span class="material-symbols-outlined text-[1rem]">arrow_drop_down</span>
+                </button>
+                <div class="absolute top-10 left-0 pt-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                    <div class="bg-black/95 backdrop-blur-md border border-white/10 shadow-2xl flex flex-col py-2">
+                        <a class="nav-link serif-display uppercase tracking-widest text-[0.7rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 hover:bg-white/5 transition-all duration-300 px-5 py-3" href="about.html">关于我们</a>
+                        <a class="nav-link serif-display uppercase tracking-widest text-[0.7rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 hover:bg-white/5 transition-all duration-300 px-5 py-3" href="benefits.html">核心优势</a>
+                        <a class="nav-link serif-display uppercase tracking-widest text-[0.7rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 hover:bg-white/5 transition-all duration-300 px-5 py-3" href="categories.html">评选类别</a>
+                        <a class="nav-link serif-display uppercase tracking-widest text-[0.7rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 hover:bg-white/5 transition-all duration-300 px-5 py-3" href="deadlines.html">日程安排</a>
+                        <a class="nav-link serif-display uppercase tracking-widest text-[0.7rem] font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 hover:bg-white/5 transition-all duration-300 px-5 py-3" href="faq.html">常见问题</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-3 md:gap-4 z-50 relative">
+            <button class="bg-primary text-on-primary px-4 md:px-6 py-2 serif-display uppercase tracking-widest text-[0.65rem] md:text-[0.75rem] font-bold active:scale-95 transition-transform whitespace-nowrap shadow-lg shadow-primary/20">
+                订阅最新资讯
+            </button>
+            <button id="mobile-menu-btn" class="md:hidden text-[#faf9f6] p-1 focus:outline-none">
+                <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-black/95 backdrop-blur-md z-40 flex flex-col justify-center items-center gap-6 opacity-0 pointer-events-none transition-all duration-300 md:hidden scale-105 overflow-y-auto py-20">
+    <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="insights.html">深度洞察</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="interviews.html">独家专访</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="honorees.html">历届荣誉</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-2xl font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="enterprise-certification.html">企业认证</a>
+    <div class="w-16 h-px bg-white/20 my-2"></div>
+    <p class="sans-label uppercase tracking-[0.3em] text-[0.65rem] text-primary font-bold">评选盛典</p>
+    <a class="nav-link serif-display uppercase tracking-widest text-lg font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="about.html">关于我们</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-lg font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="benefits.html">核心优势</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-lg font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="categories.html">评选类别</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-lg font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="deadlines.html">日程安排</a>
+    <a class="nav-link serif-display uppercase tracking-widest text-lg font-bold text-[#faf9f6]/80 hover:text-[#bb0002] hover:opacity-100 transition-colors duration-300" href="faq.html">常见问题</a>
+</div>
+
+<!-- Main Container -->
+<main class="pt-32 pb-24 px-4 md:px-8 max-w-4xl mx-auto flex-grow w-full">
+    <div class="mb-12">
+        <a href="insights.html" class="inline-flex items-center gap-2 text-primary hover:text-[#bb0002] transition-colors font-bold text-xs uppercase tracking-widest sans-label">
+            <span class="material-symbols-outlined text-[1rem]">arrow_back</span> 返回深度洞察 BACK TO INSIGHTS
+        </a>
+    </div>
+
+    <article id="insight-article" hidden></article>
+
+    <div id="insight-missing" hidden class="py-20 text-center">
+        <p class="serif-display text-2xl text-[#0a0a0a] mb-6">未找到这篇文章。</p>
+        <a href="insights.html" class="inline-block bg-[#1b1c1a] hover:bg-[#bb0002] text-white px-8 py-4 sans-label text-xs tracking-widest uppercase transition-colors font-bold">返回深度洞察</a>
+    </div>
+</main>
+
+<!-- Footer Shell -->
+<footer class="w-full py-16 lg:py-20 px-4 md:px-8 bg-[#121212] border-t border-white/10 mt-auto">
+    <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        <div class="lg:col-span-4 flex flex-col">
+            <div class="mb-6">
+                <img src="assets/images/Top 10 chinese logo.png" alt="全球十大华人 Logo" class="h-9 md:h-11 w-auto object-contain drop-shadow-xl" loading="lazy" />
+            </div>
+            <p class="serif-display text-sm text-[#faf9f6]/80 leading-relaxed max-w-sm mb-5 font-light">
+                连接全球华人商业领袖、企业家与卓越企业，记录影响世界的华人商业力量，构建具有公信力与前瞻性的全球华商价值坐标。
+            </p>
+            <div class="flex items-center gap-2 text-xs text-gold/90 font-mono tracking-wider uppercase">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>
+                <span>International Chinese Foundation</span>
+            </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col">
+            <h5 class="sans-label font-bold text-[#bb0002] uppercase text-xs tracking-widest mb-6 flex items-center gap-2">
+                <span class="w-2 h-0.5 bg-[#bb0002] inline-block"></span>
+                网站导航
+            </h5>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-3.5">
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="insights.html">深度洞察</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="program.html">评选盛典</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="interviews.html">独家专访</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="about.html">关于我们</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="honorees.html">历届荣誉</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="benefits.html">核心优势</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="enterprise-certification.html">企业认证</a>
+                <a class="serif-display text-sm text-[#faf9f6]/70 hover:text-gold transition-colors duration-200" href="faq.html">常见问题</a>
+            </div>
+        </div>
+        <div class="lg:col-span-4 flex flex-col">
+            <h5 class="sans-label font-bold text-[#bb0002] uppercase text-xs tracking-widest mb-6 flex items-center gap-2">
+                <span class="w-2 h-0.5 bg-[#bb0002] inline-block"></span>
+                关于全球十大华人
+            </h5>
+            <p class="serif-display text-sm text-[#faf9f6]/75 leading-relaxed font-light mb-4">
+                全球十大华人基金会致力于连接全球华人商业力量，关注具有全球影响力的全球十大华人企业家、商业领袖与卓越企业，并通过全球十大华人评选、人物报道与专业内容，记录与传播华人商业力量在全球的发展与影响。
+            </p>
+        </div>
+    </div>
+    <div class="max-w-[1440px] mx-auto border-t border-white/10 mt-12 pt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 text-xs text-[#faf9f6]/50 serif-display">
+        <div class="max-w-3xl">
+            <p class="leading-relaxed text-[#faf9f6]/70 font-medium">
+                © <span id="footer-year">2026</span> 全球十大华人 · 保留所有权利
+            </p>
+            <p class="mt-1.5 text-[11px] text-[#faf9f6]/40 leading-relaxed">
+                本平台由国际华人基金会（Yayasan Keturunan Cina Antarabangsa / International Chinese Foundation，注册号：PPM-029-10-29042016）联合全球权威编辑团队独立运营与管理。
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/supabase-config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/js/crawled-insights-client.js"></script>
+
+<script id="nav-script">
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        let isOpen = false;
+        if (btn && menu && icon) {
+            btn.addEventListener('click', () => {
+                isOpen = !isOpen;
+                if (isOpen) {
+                    menu.classList.remove('opacity-0', 'pointer-events-none', 'scale-105');
+                    menu.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
+                    icon.textContent = 'close';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    menu.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
+                    menu.classList.add('opacity-0', 'pointer-events-none', 'scale-105');
+                    icon.textContent = 'menu';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+        const y = document.getElementById('footer-year');
+        if (y) y.textContent = String(new Date().getFullYear());
+    });
+</script>
+
+<script id="insight-render">
+(function () {
+    var articleEl = document.getElementById('insight-article');
+    var missingEl = document.getElementById('insight-missing');
+    var C = window.T10C_INSIGHTS_CLIENT;
+    var SITE = 'https://top10chinese.com';
+
+    function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (ch) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+        });
+    }
+    function paras(list) {
+        return (list || []).map(function (p) {
+            return '<p class="mb-6">' + esc(p) + '</p>';
+        }).join('');
+    }
+    function showMissing() {
+        document.title = '未找到文章 | 全球十大华人';
+        missingEl.hidden = false;
+    }
+
+    function jsonLd(d, url) {
+        var blocks = [{
+            '@context': 'https://schema.org', '@type': 'Article',
+            headline: d.title, datePublished: d.date.replace(/\./g, '-'),
+            dateModified: d.date.replace(/\./g, '-'),
+            author: { '@type': 'Organization', name: '全球十大华人商业研究院' },
+            publisher: { '@type': 'Organization', name: '全球十大华人' },
+            image: d.imageUrl || undefined, url: url,
+            description: d.metaDescription || d.excerpt
+        }];
+        if (d.faqItems.length) {
+            blocks.push({
+                '@context': 'https://schema.org', '@type': 'FAQPage',
+                mainEntity: d.faqItems.map(function (f) {
+                    return { '@type': 'Question', name: f.question,
+                        acceptedAnswer: { '@type': 'Answer', text: f.answer } };
+                })
+            });
+        }
+        blocks.forEach(function (b) {
+            var s = document.createElement('script');
+            s.type = 'application/ld+json';
+            s.textContent = JSON.stringify(b);
+            document.head.appendChild(s);
+        });
+    }
+
+    function setMeta(d, url) {
+        document.title = (d.metaTitle || d.title) + ' | 全球十大华人商业研究院 | 全球十大华人';
+        var desc = d.metaDescription || d.excerpt || '';
+        function meta(sel, attr, val) {
+            var el = document.head.querySelector(sel);
+            if (!el) { el = document.createElement('meta'); el.setAttribute(attr.name, attr.value); document.head.appendChild(el); }
+            el.setAttribute('content', val);
+        }
+        meta('meta[name="description"]', { name: 'name', value: 'description' }, desc);
+        meta('meta[property="og:type"]', { name: 'property', value: 'og:type' }, 'article');
+        meta('meta[property="og:title"]', { name: 'property', value: 'og:title' }, (d.metaTitle || d.title) + ' | 全球十大华人');
+        meta('meta[property="og:description"]', { name: 'property', value: 'og:description' }, desc);
+        meta('meta[property="og:url"]', { name: 'property', value: 'og:url' }, url);
+        if (d.imageUrl) meta('meta[property="og:image"]', { name: 'property', value: 'og:image' }, d.imageUrl);
+        var canon = document.createElement('link');
+        canon.rel = 'canonical'; canon.href = url;
+        document.head.appendChild(canon);
+    }
+
+    function render(d) {
+        if (!d) { showMissing(); return; }
+        var url = SITE + '/insight.html?slug=' + encodeURIComponent(d.slug);
+        setMeta(d, url);
+        jsonLd(d, url);
+
+        var h = '';
+        h += '<nav class="flex text-xs sans-label uppercase tracking-widest text-secondary/60 gap-2 items-center mb-8" aria-label="Breadcrumb">';
+        h += '<a href="index.html" class="hover:text-primary transition-colors">首页 HOME</a>';
+        h += '<span class="material-symbols-outlined text-[10px]">chevron_right</span>';
+        h += '<a href="insights.html" class="hover:text-primary transition-colors">深度洞察 INSIGHTS</a>';
+        h += '<span class="material-symbols-outlined text-[10px]">chevron_right</span>';
+        h += '<span class="text-on-surface font-bold max-w-[220px] md:max-w-none truncate block">' + esc(d.title) + '</span></nav>';
+
+        h += '<header class="mb-10 space-y-6">';
+        h += '<div class="inline-block bg-primary text-on-primary px-3 py-1 sans-label text-[0.65rem] font-bold tracking-widest uppercase">' + esc(d.category) + '</div>';
+        h += '<h1 class="serif-display text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-[#0a0a0a]">' + esc(d.title) + '</h1>';
+        h += '<div class="flex items-center gap-4 text-gray-500 text-sm font-mono uppercase tracking-widest pt-2"><span>' + esc(d.date) + '</span><span>•</span><span>' + esc(d.readTime) + '</span></div>';
+        h += '</header>';
+
+        if (d.imageUrl) {
+            h += '<div class="aspect-[16/9] w-full overflow-hidden bg-surface-container-high mb-12 relative border border-outline-variant/10">';
+            h += '<img class="w-full h-full object-cover" src="' + esc(d.imageUrl) + '" alt="' + esc(d.imageAlt || d.title) + '" loading="lazy"></div>';
+        }
+
+        h += '<div class="font-body text-lg text-[#1a1a1a] leading-relaxed max-w-[720px]">';
+        if (d.standfirst) h += '<p class="font-bold text-[#0a0a0a] mb-8">' + esc(d.standfirst) + '</p>';
+        if (d.sections.length) {
+            h += d.sections.map(function (s) {
+                return '<h2 class="serif-display text-2xl font-bold text-[#0a0a0a] pt-4 mb-6">' + esc(s.heading) + '</h2>' + paras(s.paragraphs);
+            }).join('');
+        } else {
+            h += paras(d.body);
+        }
+
+        if (d.table) {
+            h += '<div class="overflow-x-auto my-8"><table class="w-full text-sm border border-outline-variant/20"><thead><tr class="bg-surface-container-low">';
+            h += d.table.headers.map(function (x) { return '<th class="text-left font-bold p-3 border-b border-outline-variant/20">' + esc(x) + '</th>'; }).join('');
+            h += '</tr></thead><tbody>';
+            h += d.table.rows.map(function (r) {
+                return '<tr class="border-b border-outline-variant/10">' + r.map(function (c) { return '<td class="p-3 align-top">' + esc(c) + '</td>'; }).join('') + '</tr>';
+            }).join('');
+            h += '</tbody></table></div>';
+        }
+
+        if (d.internalLinks.length) {
+            h += '<div class="my-10 flex flex-wrap gap-3">';
+            h += d.internalLinks.map(function (l) {
+                return '<a href="' + esc(l.href) + '" class="inline-flex items-center gap-2 border border-[#1b1c1a]/15 hover:border-primary hover:text-primary transition-colors px-4 py-2 sans-label text-xs uppercase tracking-widest font-bold">' + esc(l.label) + ' <span class="material-symbols-outlined text-[1rem]">arrow_forward</span></a>';
+            }).join('');
+            h += '</div>';
+        }
+
+        h += '<p class="text-zinc-500 text-xs italic mt-10 pt-4 border-t border-gray-100">';
+        h += '本文为全球十大华人商业研究院基于公开报道的独立分析';
+        if (d.sourceName && d.sourceUrl) {
+            h += '，原始报道最先由' + esc(d.sourceName) + '发布（<a class="underline hover:text-primary" href="' + esc(d.sourceUrl) + '" target="_blank" rel="noopener noreferrer nofollow">来源</a>）';
+        } else if (d.sourceUrl) {
+            h += '（<a class="underline hover:text-primary" href="' + esc(d.sourceUrl) + '" target="_blank" rel="noopener noreferrer nofollow">来源</a>）';
+        }
+        h += '。提及企业或个人属报道行为，不代表背书。</p>';
+        h += '</div>';
+
+        if (d.faqItems.length) {
+            h += '<section class="mt-20 border-t border-outline-variant/10 pt-16"><h3 class="serif-display text-3xl font-bold text-[#0a0a0a] mb-8">常见问题 FAQs</h3><div class="space-y-6">';
+            h += d.faqItems.map(function (f, i) {
+                return '<div class="bg-surface-container-low p-6 border border-outline-variant/10"><h4 class="sans-label text-base font-bold text-[#0a0a0a] mb-2">Q' + (i + 1) + ': ' + esc(f.question) + '</h4><p class="font-body text-[#1a1a1a] text-sm leading-relaxed">' + esc(f.answer) + '</p></div>';
+            }).join('');
+            h += '</div></section>';
+        }
+
+        h += '<div class="mt-20 border-t border-outline-variant/10 pt-10"><a href="insights.html" class="inline-flex items-center gap-2 text-primary hover:text-[#bb0002] transition-colors font-bold text-xs uppercase tracking-widest sans-label"><span class="material-symbols-outlined text-[1rem]">arrow_back</span> 返回深度洞察</a></div>';
+
+        articleEl.innerHTML = h;
+        articleEl.hidden = false;
+    }
+
+    var slug = new URLSearchParams(window.location.search).get('slug');
+    if (!slug || !C) { showMissing(); return; }
+    C.fetchOne(slug).then(render).catch(showMissing);
+})();
+</script>
+</body>
+</html>

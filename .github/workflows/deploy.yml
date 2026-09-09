@@ -72,7 +72,7 @@ jobs:
 
               // Upload all site files recursively!
               const localRoot = process.cwd();
-              const excludeDirs = ['.git', '.github', '.agents', '.agent-rules', 'node_modules'];
+              const excludeDirs = ['.git', '.github', '.agents', '.agent-rules', 'node_modules', 'scripts'];
               const excludeFiles = ['package.json', 'package-lock.json', '.gitignore', 'scripts_scan_sizes.cjs'];
 
               async function uploadDirectory(localPath, remotePath) {

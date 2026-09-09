@@ -1,0 +1,43 @@
+name: Weekly article crawl
+
+# Runs the crawl-and-rewrite pipeline once a week: pull a Chinese company / founder story from
+# 36氪 or 虎嗅, rewrite it into a Simplified-Chinese 全球十大华人 深度观察 piece, insert one row
+# into the shared MCN Group Supabase `articles` table as country_code=T10C (auto-published).
+# Runs as a plain Node script -- the site is static HTML on Namecheap (deployed by deploy.yml via
+# FTP), the crawler doesn't need a server, and keeping it a script matches the other MCN Group
+# crawlers.
+#
+# Saturday 02:00 UTC -- the MCN Group crawls run Tue/Wed/Fri, the enterprise ones Mon/Thu/Sat,
+# to avoid competing for the same GitHub Actions minute across repos.
+on:
+  schedule:
+    - cron: "0 2 * * 6"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: scripts/crawler
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        run: npm ci
+      - name: Run crawl cycle
+        run: npm run crawl
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          COUNTRY_CODE: T10C
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}

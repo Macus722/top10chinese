@@ -1,0 +1,15 @@
+{
+  "name": "top10chinese-crawler",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "crawl": "node run.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
+    "@google/genai": "^2.15.0",
+    "@mendable/firecrawl-js": "^4.32.0",
+    "@supabase/supabase-js": "^2.111.0"
+  }
+}
